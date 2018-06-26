@@ -14,7 +14,7 @@
 
 |名称|类型|是否必需|描述|示例|
 |--|--|----|--|--|
-|Ip|string|是|要查询的IP，只支持IPv4格式。|1.1.1.1|
+|Ip|string|是|要查询的IP。只支持IPv4格式。|1.1.1.1|
 |others|integer|否|补充说明场景行业等信息。|无|
 
 **返回参数**
@@ -22,7 +22,7 @@
 |名称|类型|描述|示例|
 |--|--|--|--|
 |Ip|string|被查询的IP。|1.1.1.1|
-|Info|String|被查询的IP的详细安全信息。**说明：** 字符串符合标准JSON格式，使用时请自行反序列化。
+|Info|String|被查询IP的详细安全信息。**说明：** 字符串符合标准JSON格式，使用时请自行反序列化。
 
 具体结构说明见[表 1](#table_t3j_mwb_b2b)。
 
@@ -30,16 +30,16 @@
 
 |名称|类型|描述|示例|
 |--|--|--|--|
-|country|string|被查询IP的所在国别。|中国|
-|province|string|被查询IP的所在省份。|浙江|
-|city|string|指定IP的所在地级市。|杭州|
-|is\_abroad|string|被查询IP是否国外IP地址， 取值：-   1：是
+|country|string|被查询IP所在国别。|中国|
+|province|string|被查询IP所在省份。|浙江|
+|city|string|指定IP所在地级市。|杭州|
+|is\_abroad|string|被查询IP是否是国外IP地址， 取值：-   1：是
 -   0：否
 
 |1|
 |isp|string|被查询IP的互联网服务提供商。|china telecom|
 |asn\_id|string|被查询IP的ASN编号。|9416|
-|is\_idc|string|被查询IP是否IDC IP， 取值：-   1：是
+|is\_idc|string|被查询IP是否是IDC IP， 取值：-   1：是
 -   0：否
 
 |0|
@@ -51,11 +51,11 @@
 -   0：否
 
 |0|
-|is\_base|string|被查询IP的是否是移动基站， 取值：-   1：是
+|is\_base|string|被查询IP是否是移动基站， 取值：-   1：是
 -   0：否
 
 |0|
-|is\_tor|string|被查询IP的是否是暗网IP， 取值：-   1：是
+|is\_tor|string|被查询IP是否是暗网IP， 取值：-   1：是
 -   0：否
 
 |0|
@@ -71,99 +71,99 @@
 -   0：否
 
 |1，表示30天内绑定过域名|
-|is\_net\_attack\_1d|string|被查询IP的在近1天是否发起过网络攻击（DDoS攻击、Web攻击、常见协议的暴力破解攻击等）， 取值：-   1：是
+|is\_net\_attack\_1d|string|被查询IP在近1天是否发起过网络攻击（DDoS攻击、Web攻击、常见协议的暴力破解攻击等）， 取值：-   1：是
 -   0：否
 
 |0|
-|is\_net\_attack\_7d|string|被查询IP的在近7天是否发起过网络攻击， 取值：-   1：是
+|is\_net\_attack\_7d|string|被查询IP在近7天是否发起过网络攻击， 取值：-   1：是
 -   0：否
 
 |0|
-|is\_net\_attack\_30d|string|被查询IP的在近30天是否发起过网络攻击， 取值：-   1：是
+|is\_net\_attack\_30d|string|被查询IP在近30天是否发起过网络攻击， 取值：-   1：是
 -   0：否
 
 |1， 表示30天内有网络攻击|
-|is\_botnet\_1d|string|被查询IP的在近1天之内是否为僵尸网络， 取值：-   1：是
+|is\_botnet\_1d|string|被查询IP在近1天之内是否为僵尸网络， 取值：-   1：是
 -   0：否
 
 |0|
-|is\_botnet\_7d|string|被查询IP的在近7天之内是否为僵尸网络， 取值：-   1：是
+|is\_botnet\_7d|string|被查询IP在近7天之内是否为僵尸网络， 取值：-   1：是
 -   0：否
 
 |0|
-|is\_botnet\_30d|string|被查询IP的在近30天之内是否为僵尸网络， 取值：-   1：是
+|is\_botnet\_30d|string|被查询IP在近30天之内是否为僵尸网络， 取值：-   1：是
 -   0：否
 
 |1，30天存在僵尸网络行为|
-|is\_c2\_1d|string|被查询IP的在近1天之内是否是恶意软件中控， 取值：-   1：是
+|is\_c2\_1d|string|被查询IP在近1天之内是否是恶意软件中控， 取值：-   1：是
 -   0：否
 
 |0|
-|is\_c2\_7d|string|被查询IP的在近7天之内是否是恶意软件中控， 取值：-   1：是
+|is\_c2\_7d|string|被查询IP在近7天之内是否是恶意软件中控， 取值：-   1：是
 -   0：否
 
 |0|
-|is\_c2\_30d|string|被查询IP的在近30天之内是否是恶意软件中控， 取值：-   1：是
+|is\_c2\_30d|string|被查询IP在近30天之内是否是恶意软件中控， 取值：-   1：是
 -   0：否
 
 |0|
-|is\_black\_campaign\_1d|string|被查询IP的在近1天内是否有过疑似黑产行为（包含短信验证码接码攻击、图片验证码打码攻击、恶意注册、恶意撞库等行为）， 取值：-   1：是
+|is\_black\_campaign\_1d|string|被查询IP在近1天内是否有过疑似黑产行为（包含短信验证码接码攻击、图片验证码打码攻击、恶意注册、恶意撞库等行为）， 取值：-   1：是
 -   0：否
 
 |0|
-|is\_black\_campaign\_7d|string|被查询IP的在近7天内是否有过疑似黑产行为， 取值：-   1：是
+|is\_black\_campaign\_7d|string|被查询IP在近7天内是否有过疑似黑产行为， 取值：-   1：是
 -   0：否
 
 |0|
-|is\_black\_campaign\_30d|string|被查询IP的在近30天内是否有过疑似黑产行为， 取值：-   1：是
+|is\_black\_campaign\_30d|string|被查询IP在近30天内是否有过疑似黑产行为， 取值：-   1：是
 -   0：否
 
 |0|
-|is\_open\_common\_port\_1d|string|被查询IP的在近1天内是否开放常用端口（21、22、80、443等）， 取值：-   1：是
+|is\_open\_common\_port\_1d|string|被查询IP在近1天内是否开放常用端口（21、22、80、443等）， 取值：-   1：是
 -   0：否
 
 |0|
-|is\_open\_common\_port\_7d|string|被查询IP的在近7天内是否开放常用端口（21、22、80、443等）， 取值：-   1：是
+|is\_open\_common\_port\_7d|string|被查询IP在近7天内是否开放常用端口（21、22、80、443等）， 取值：-   1：是
 -   0：否
 
 |0|
-|is\_open\_common\_port\_30d|string|被查询IP的在近30天内是否开放常用端口（21、22、80、443等）， 取值：-   1：是
+|is\_open\_common\_port\_30d|string|被查询IP在近30天内是否开放常用端口（21、22、80、443等）， 取值：-   1：是
 -   0：否
 
 |0|
-|is\_cheatflow\_1d|string|被查询IP的在近1天内是否有垃圾流量， 取值：-   1：是
+|is\_cheatflow\_1d|string|被查询IP在近1天内是否有垃圾流量， 取值：-   1：是
 -   0：否
 
 |0|
-|is\_cheatflow\_7d|string|被查询IP的在近7天内是否有垃圾流量， 取值：-   1：是
+|is\_cheatflow\_7d|string|被查询IP在近7天内是否有垃圾流量， 取值：-   1：是
 -   0：否
 
 |0|
-|is\_cheatflow\_30d|string|被查询IP的在近30天内是否有垃圾流量， 取值：-   1：是
+|is\_cheatflow\_30d|string|被查询IP在近30天内是否有垃圾流量， 取值：-   1：是
 -   0：否
 
 |0|
-|is\_hijack\_1d|string|被查询IP的在最近1天是否有过流量劫持， 取值：-   1：是
+|is\_hijack\_1d|string|被查询IP在最近1天是否有过流量劫持， 取值：-   1：是
 -   0：否
 
 |0|
-|is\_hijack\_7d|string|被查询IP的在最近7天是否有过流量劫持， 取值：-   1：是
+|is\_hijack\_7d|string|被查询IP在最近7天是否有过流量劫持， 取值：-   1：是
 -   0：否
 
 |0|
-|is\_hijack\_30d|string|被查询IP的在最近30天是否有过流量劫持， 取值：-   1：是
+|is\_hijack\_30d|string|被查询IP在最近30天是否有过流量劫持， 取值：-   1：是
 -   0：否
 
 |0|
-|is\_proxy\_1d|string|被查询IP的在最近1天是否代理服务器， 取值：-   1：是
+|is\_proxy\_1d|string|被查询IP在最近1天是否是代理服务器， 取值：-   1：是
 -   0：否
 
 |0|
-|is\_proxy\_7d|string|被查询IP的在最近7天是否代理服务器， 取值：-   1：是
+|is\_proxy\_7d|string|被查询IP在最近7天是否是代理服务器， 取值：-   1：是
 -   0：否
 
 |0|
-|is\_proxy\_30d|string|被查询IP的在最近30天是否代理服务器， 取值：-   1：是
+|is\_proxy\_30d|string|被查询IP在最近30天是否是代理服务器， 取值：-   1：是
 -   0：否
 
 |0|
@@ -226,12 +226,12 @@
 |--|--|--|--|
 |IP|string|被查询的IP。|1.1.1.1|
 |Phone|string|被查询的手机号。|13111111111|
-|IpInfo|string|被查询的IP的详细安全信息。**说明：** 字符串符合标准JSON格式，使用时请自行反序列化。
+|IpInfo|string|被查询IP的详细安全信息。**说明：** 字符串符合标准JSON格式，使用时请自行反序列化。
 
 具体结构见[表 1](#table_t3j_mwb_b2b)。
 
 |\{‘country’：’中国’\}|
-|PhoneInfo|String|被查询的手机号的详细安全信息。**说明：** 字符串符合标准JSON格式，使用时请自行反序列化。
+|PhoneInfo|String|被查询手机号的详细安全信息。**说明：** 字符串符合标准JSON格式，使用时请自行反序列化。
 
 具体结构见[表 2](#table_lkj_mwb_b2b)。
 
@@ -246,7 +246,7 @@
 -   0：否
 
 |0|
-|is\_black\_phone|string|被查询手机号是否黑产手机号，取值：-   1：是
+|is\_black\_phone|string|被查询手机号是否是黑产手机号，取值：-   1：是
 -   0：否
 
 |1|
@@ -313,9 +313,9 @@
 |错误码|错误信息|描述|操作建议|
 |---|----|--|----|
 |101|Invalid parameters|参数有误。|请检查参数类型是否有误，要查询的IP是否真实有效。|
-|102|The specified IP does not exist|IP在情报库中不存在。|查询其他IP。|
+|102|The specified IP does not exist|被查询IP在情报库中不存在。|请查询其他IP。|
 |103|The API requests have exceeded the limit|查询API调用次数超过已购买的可调用次数。|请[购买态势感知（情报资源包）](https://common-buy.aliyun.com/?commodityCode=sas_ip#/buy)。|
-|104|The specified Phone does not exist|手机号在情报库中不存在。|-|
+|104|The specified Phone does not exist|被查询手机号在情报库中不存在。|-|
 |403|The user is not authorized|无权访问该接口。|请[购买态势感知（情报资源包）](https://common-buy.aliyun.com/?commodityCode=sas_ip#/buy)。|
 |500|An internal error occurred|系统内部错误。|请重试。若重试仍未成功，请提交工单联系我们。|
 
@@ -323,7 +323,7 @@
 
 以下示例中会用到阿里云账号下创建的AccessKey密钥，您可以登录[AccessKey管理控制台](https://ak-console.aliyun.com/#/accesskey)，复制您的AccessKey信息（AccessKeyId和AccessKeySecret），并替换到以下示例代码中。
 
-**说明：** AccessKeyID和AccessKeySecret是您访问阿里云API的密钥，具有该账户完全的权限，请您妥善保管。
+**说明：** AccessKeyID和AccessKeySecret是您访问阿里云API的密钥，具有您的阿里云账户完全的权限，请您妥善保管。
 
 更多语言的SDK信息，请参考[阿里云开发者工具包（SDK）](https://develop.aliyun.com/tools/sdk?java#/java)。
 
@@ -463,7 +463,7 @@ print response
 
 **请求方法**
 
-支持HTTP GET或POST方法发送请求。
+支持以HTTP GET或POST方法发送请求。
 
 **请求参数**
 
@@ -492,7 +492,7 @@ https://sas-api.aliyuncs.com/?Action=GetIpProfile
 |AccessKeyId|String|是|阿里云颁发给用户的访问服务所用的密钥ID。|
 |Signature|String|是|签名结果串，关于签名的计算方法，参见[签名机制](../../../../cn.zh-CN/API 参考/调用方式/签名机制.md#)。|
 |SignatureMethod|String|是|签名方式，取值范围：HMAC-SHA1。|
-|Timestamp|String|是|请求的时间戳。日期格式按照ISO8601标准表示，并需要使用UTC时间。格式为：YYYY-MM-DDThh：mm：ssZ。例如，2017-03-23T06：59：55Z（为北京时间2017年3月23日14点59分55秒）。
+|Timestamp|String|是|请求的时间戳。日期格式按照ISO8601标准表示，并需要使用UTC时间。格式为：YYYY-MM-DDThh：mm：ssZ。例如，2017-03-23T06：59：55Z（表示北京时间2017年3月23日14点59分55秒）。
 
 |
 |SignatureVersion|String|是|签名算法版本，目前版本是1.0。|
