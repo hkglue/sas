@@ -2,7 +2,7 @@
 
 You can use the following methods to uninstall the Threat Detection Service \(TDS\) agent and disable the protection. After you have uninstalled the TDS agent, there is a waiting period of six hours before the Security Status of the server in the TDS console changes to unprotected.
 
-**Note:** After you have uninstalled the agent, TDS will initialize self protection. The protection duration is 24 hours. During this period, you can only manually reinstall the agent. When you reinstall the agent, you need to ignore all the error messages that the system has displayed and run the install command more than three times.
+**Note:** After you have uninstalled the agent, TDS initializes self protection. The protection duration is 24 hours. During this period, you can only manually reinstall the agent. When you reinstall the agent, you must ignore all the error messages that the system displays and run the install command more than three times.
 
 ## Automatically uninstall the TDS agent {#section_tdh_2kd_zdb .section}
 
@@ -14,7 +14,7 @@ To uninstall the TDS agent, you must make sure that the status of the agent on t
 
 Follow these steps to automatically uninstall the TDS agent:
 
-1.  Log on to the [Threat Detection Service console](https://yundun.console.aliyun.com/?p=sas) .
+1.  Log on to the [Threat Detection Service console](https://yundun.console.aliyun.com/?p=sas).
 2.  In the left-side navigation pane, click **Settings**.
 3.  Click **Install/Uninstall TDS Agent**.
 4.  Click **Uninstall Agent** in the upper-right corner.
@@ -41,7 +41,7 @@ Select a method that is applicable to the operating system of your server to man
 **Windows servers**
 
 1.  Log on to your server.
-2.  Download the [script for uninstalling the TDS agent](http://update.aegis.aliyun.com/download/uninstall.bat) to your server.
+2.  [Download the script for uninstalling the TDS agent](http://update.aegis.aliyun.com/download/uninstall.bat) to your server.
 
     **Note:** You can also download the script to your computer and use an FTP client to upload the script to your server.
 
