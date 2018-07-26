@@ -4,17 +4,17 @@ Threat Detection Service \(TDS\) supports baseline checks to automatically detec
 
 ## Function description {#section_gxf_n4k_zdb .section}
 
-After you enable the server baseline check, TDS automatically detects risks related to systems, accounts, databases, passwords, and compliance configurations of your servers, and provides resolutions. For more information about the checked items, see [Details of the instance baseline check](#section_e1p_s4k_zdb).
+After you enable the server baseline check, TDS automatically detects risks related to systems, accounts, databases, passwords, and compliance configurations of your servers, and provides resolutions. For more information about the check items, see [Details of the server baseline check](#section_e1p_s4k_zdb).
 
-By default, TDS automatically performs the instance baseline check once between 00:00 and 06:00 each day. You can add and maintain a check policy that specifies the checked items, target instances, check cycle, and trigger time.
+By default, TDS automatically performs the server baseline check once between 00:00 and 06:00 each day. You can add and maintain a scan policy that specifies the check items, target instances, check cycle, and trigger time.
 
-**Note:** For some checked items, such as detecting weak passwords in MySQL and SQL Server services, TDS may use certain instance resources for logon attempts, and generate some logon failure records. Therefore, these checked items are disabled by default.  If you require these items, confirm the preceding risks, customize the server baseline check policy, and then check these items.
+**Note:** For some checked items, such as detecting weak passwords in MySQL and SQL Server services, TDS may use certain instance resources for logon attempts, and generate some logon failure records. Therefore, these checked items are disabled by default.  If you require these items, confirm the preceding risks, customize the server baseline scan policy, and then check these items.
 
-You can configure a whitelist for the instance baseline check. The TDS skips items that are included in the whitelist. You can also add notes to the items in the whitelist to facilitate tracking.
+You can configure a whitelist for the server baseline check. TDS skips items that are included in the whitelist. You can also add notes to the items in the whitelist to facilitate tracking.
 
 ## Add a scan policy {#section_hxf_n4k_zdb .section}
 
-When you enable the server baseline check, the default policy is used. You cannot change the checked items and checking cycle of the default policy.
+When you enable the server baseline check, the default policy is used. You cannot change the check items and check cycle of the default policy.
 
 Follow these steps to create a scan policy:
 
@@ -23,16 +23,16 @@ Follow these steps to create a scan policy:
 3.  Click **Create Policy** to create a scan policy and follow these configurations:
 
     1.  Enter a policy name.
-    2.  Select the items to check related to compliance configurations, passwords, systems, accounts, and databases. For more information, see [Details of the instance baseline check](#section_e1p_s4k_zdb).
-    3.  Specify the checking cycle \(1, 3, 7, or 30 days\), and trigger time \(00:00-06:00, 06:00-12:00, 12:00-18:00, or 18:00-24:00\).
+    2.  Select the items to check related to compliance configurations, passwords, systems, accounts, and databases. For more information, see [Details of the server baseline check](#section_e1p_s4k_zdb).
+    3.  Specify the check cycle \(1, 3, 7, or 30 days\), and trigger time \(00:00-06:00, 06:00-12:00, 12:00-18:00, or 18:00-24:00\).
     4.  Select the target assets.
 
         **Note:** By default, new instances are sent to **All Groups** \> **default**. To apply this policy to new instances, select **Default**.
 
     5.  Click **OK**.
-    The new policy takes effect immediately, and runs a scan according to the specified cycle and trigger time. You can also click **Check** on a target policy on the Servers tab page to run the scan immediately.
+    The new policy takes effect immediately, and runs a scan according to the specified cycle and trigger time. You can also click **Check Now** on a target policy on the Servers tab page to run the scan immediately.
 
-4.  Click **Settings** in the upper-right corner on the Baseline Check page. Then, in the dialog box that appears, select a target policy from the list under **Scan Policy**, and click **Modify** to edit this policy, or click **Delete** to delete this policy.
+4.  Click **Settings** in the upper-right corner on the Baseline Check page. Then, in the dialog box that appears, select a target policy from the list under **Scan Policy**, and click **Edit** to edit this policy, or click **Delete** to delete this policy.
 
      
 
@@ -74,7 +74,7 @@ Follow these steps to change server baseline check settings:
 
     -   Maintain the **Baseline Check Whitelist**: Click **Remove** under a risk to remove this item from the whitelist. Then, the system performs a new scan and generates the corresponding alarms.
 
-## Details of the instance baseline check {#section_e1p_s4k_zdb .section}
+## Details of the server baseline check {#section_e1p_s4k_zdb .section}
 
 |Category|Check item|
 |Compliance with Security Standards|httpd2.2|
