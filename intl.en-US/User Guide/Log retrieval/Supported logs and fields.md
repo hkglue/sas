@@ -8,12 +8,12 @@ The log retrieval feature allows you to query the following types of logs. You c
 
 |Type| Log|Description|
 |Server log|[Logon history](#section_ams_cwk_zdb)|Logs of successful logons|
-|[Brute-force attack](#section_gms_cwk_zdb)|Logs of brute force cracking attacks|
+|[Brute force cracking](#section_gms_cwk_zdb)|Logs of brute force cracking attacks|
 |[Process snapshot](#section_qns_cwk_zdb)|Logs of process execution on the server|
 |[Port snapshot](#section_tms_cwk_zdb)|Logs of listener ports on the server|
 |[Account snapshot](#section_gns_cwk_zdb)|Logs of accounts on the server|
 |[Process startup](#section_mms_cwk_zdb)|Logs of process initiation on the server|
-|[Network connection ](#section_zms_cwk_zdb)|Logs of outgoing connections from the server|
+|[Network connection ](#section_zms_cwk_zdb)|Logs of outbound connections from the server|
 |Web log|[Web access log](#section_xns_cwk_zdb)|HTTP logs of the cloud services|
 |[Network session log](#section_j4s_cwk_zdb)|Logs of the 5-tuples of the cloud services|
 |[DNS log](#section_p4s_cwk_zdb)|Domain name resolution logs|
