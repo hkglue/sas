@@ -26,7 +26,7 @@ To view and process network intrusions that occur on your servers, follow these 
     -   **View**: View event details.
     -   **Handle Offline**: Remove the record from the list after the event has been confirmed and processed offline.
     -   **Ignore Once**: Ignore the event and remove the record from the list.
-    -   **to label this event as false positive**: Label the event as a false positive and remove it from the list.
+    -   **Label as False Positive**: Label the event as a false positive and remove it from the list.
     -   \(Webshell only\) **Handle Online**: Quarantine the webshell file. The quarantined files can be viewed by clicking **Quarantine** in the upper-right corner of the page.
 
         **Note:** The system only keeps a quarantined file for 30 days. You can restore any quarantined file before the system deletes the file.
@@ -34,11 +34,11 @@ To view and process network intrusions that occur on your servers, follow these 
 
 ## Settings {#section_bys_bsj_zdb .section}
 
-You can customize your usual logon locations and scan targets. You can also set alarm severity levels and configure advanced logon alarming.
+You can customize your usual logon locations and scan targets. You can also set alarm severity levels and configure advanced logon detection.
 
-**Note:** Advanced logon alarming is provided only in TDS Enterprise Edition. With TDS Enterprise Edition, you can specify more precise conditions of unusual logons, such as specifying valid logon IP addresses, logon times, and accounts.
+**Note:** Advanced logon detection is provided only in TDS Enterprise Edition. With TDS Enterprise Edition, you can specify more precise conditions of unusual logons, such as specifying valid logon IP addresses, logon times, and accounts.
 
-To set alarms, follow these steps:
+To set security events, follow these steps:
 
 1.  Log on to the [Threat Detection Service console](https://yundun.console.aliyun.com/?p=sas).
 2.  In the left-side navigation pane, click **Events**.
