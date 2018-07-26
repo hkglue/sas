@@ -1,6 +1,6 @@
 # Purchase Threat Detection Service {#task_lxj_3bc_zdb .task}
 
-Threat Detection Service \(TDS\) Enterprise Edition provides comprehensive security monitoring and diagnosis services for your assets on the cloud. You can purchase the TDS Enterprise Edition by Subscription.
+Threat Detection Service \(TDS\) Enterprise Edition provides comprehensive security monitoring and diagnosis services for your assets on the cloud. You can purchase TDS Enterprise Edition by Subscription.
 
 To purchase TDS Enterprise Edition, follow these steps:
 
