@@ -26,7 +26,7 @@
 
 ## 为什么在访问记录中出现针对非自己域名（如www.baidu.com）的访问记录？ {#section_j4c_yfc_zdb .section}
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13683/15331802854493_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13683/15331942004493_zh-CN.png)
 
 这种情况是因为访客绑定了host进行访问。访问分析基于用户IP资产进行访问情况统计，而非通过域名资产统计，所以只要是向用户名下IP发起过的HTTP请求，不管请求的是不是用户自己的域名都会被统计在内。
 
