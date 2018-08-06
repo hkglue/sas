@@ -2,11 +2,16 @@
 
 -   [漏洞扫描会扫描系统层面和应用层面的漏洞吗？](#section_fxb_32c_zdb)
 -   [漏洞实时扫描是如何实现的？](#section_tfg_qzm_q2b)
+-   [如何处理连接阿里云官方Yum源超时？](#section_xvc_3lp_r2b)
+-   [修复漏洞时，提示“token校验失败”，应该如何处理？](#section_k1n_kck_s2b)
+-   [态势感知无法验证系统漏洞修复时该如何进行排查？](#section_jcq_bdk_s2b)
 -   [如何获取当前软件版本漏洞信息？](#section_o4g_f25_q2b)
 -   [如何将Ubuntu 14.04系统的3.1\*内核升级至4.4内核？](#section_s4g_f25_q2b)
 -   [为什么内核漏洞升级修复后，态势感知仍然提示存在漏洞？](#section_rpg_f25_q2b)
 -   [为什么态势感知管理控制台中某些漏洞提示无更新？](#section_qqg_5f5_q2b)
 -   [如何手动检测服务器上的Linux软件漏洞？](#section_xpg_f25_q2b)
+-   [为什么漏洞修复后手动验证没有反应？](#section_ffg_my4_r2b)
+-   [为什么进行漏洞回滚操作会失败？](#section_yh5_l2p_r2b)
 
 ## 漏洞扫描会扫描系统层面和应用层面的漏洞吗？ {#section_fxb_32c_zdb .section}
 
@@ -15,6 +20,30 @@
 ## 漏洞实时扫描是如何实现的？ {#section_tfg_qzm_q2b .section}
 
 漏洞扫描每天会收集用户资产中新增的URL，然后在凌晨对这些新增的URL进行扫描。同时，还会扫描之前被曝出的漏洞，验证这些漏洞有没有被修复。实时主要指实时获取URL，等到凌晨再进行扫描。
+
+## 如何处理连接阿里云官方Yum源超时？ {#section_xvc_3lp_r2b .section}
+
+当出现类似如下的报错时`[Errno 12] Timeout on http://mirrors.aliyun.com/centos/6/os/x86_64/repodata/repomd.xml: (28, 'connect() timed out!')`
+
+请检查您本机的DNS设置是否正常，并稍作等待。如果一段时间后仍无法解决，请提交工单让售后进行排查。
+
+## 修复漏洞时，提示“token校验失败”，应该如何处理？ {#section_k1n_kck_s2b .section}
+
+当您在云盾态势感知控制台执行某项操作，却收到“token校验失效”的提示时，您可以刷新当前页面，重新登录云盾态势感知控制台。
+
+**说明：** 您可按Ctrl+F5，强制刷新当前浏览器页面。
+
+## 态势感知无法验证系统漏洞修复时，该如何进行排查？ {#section_jcq_bdk_s2b .section}
+
+1.  查看漏洞的版本信息。
+2.  确认系统是否使用阿里云的官方源。
+3.  确认系统升级后是否有执行验证操作。
+
+    **说明：** 升级内核需重启才能生效。
+
+4.  确认选择修复的版本不低于态势感知建议的版本。
+
+如未解决，请升级操作系统。
 
 ## 如何获取当前软件版本漏洞信息？ {#section_o4g_f25_q2b .section}
 
@@ -49,7 +78,7 @@
 
 1.  执行`uname -av`命令，确认当前服务器的系统内核版本是否为3.1\*。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13674/15331102498522_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13674/15335469678522_zh-CN.png)
 
 2.  执行以下命令，查看是否已有最新的内核Kernel更新包。
 
@@ -64,11 +93,11 @@
 5.  服务器重启后，执行以下命令验证内核升级是否成功。
     -   执行`uname -av`命令查看当前调用内核。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13674/15331102498523_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13674/15335469678523_zh-CN.png)
 
     -   执行`dpkg -l | grep linux-image`命令查看当前内核包情况。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13674/15331102498524_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13674/15335469678524_zh-CN.png)
 
 
 ## 内核漏洞升级修复后，态势感知仍然提示存在漏洞？ {#section_rpg_f25_q2b .section}
@@ -111,7 +140,38 @@ No Packages marked for Update
 
 ## 如何手动检测服务器上的Linux软件漏洞？ {#section_xpg_f25_q2b .section}
 
-如果您需要手动验证您服务器上的系统软件漏洞，您可以参考[如何手动检测Linux软件漏洞](https://help.aliyun.com/document_detail/59215.html)中的操作步骤检测您服务器上的系统软件漏洞。
+如果您需要手动验证您服务器上的系统软件漏洞，您可以参考[如何手动检测Linux软件漏洞](cn.zh-CN/常见问题/如何手动检测系统软件漏洞？.md#)中的操作步骤检测您服务器上的系统软件漏洞。
 
 建议您使用态势感知的系统软件漏洞功能定期自动检测您服务器上的系统软件漏洞及时发现漏洞。
+
+## 为什么漏洞修复后手动验证没有反应？ {#section_ffg_my4_r2b .section}
+
+如果您在服务器上手动执行态势感知生成的系统软件漏洞修复命令，将相关的系统软件成功升级到新的版本，并且该版本已符合态势感知控制台漏洞管理页面的描述要求。然而，您在态势感知管理控制台的漏洞处理页面，选择相应的漏洞，单击**验证**，该漏洞的状态没有正常更新为已修复。
+
+您可以通过以下方案进行排查，解决该问题：
+
+-   检查漏洞扫描等级
+
+    登录[云盾态势感知控制台](https://yundun.console.aliyun.com/?p=sas)，并前往**设置** \> **告警设置**页面，查看**漏洞管理**区域中的**我关注的等级**选项。
+
+    如果对应的扫描等级没有勾选，则不会更新相应等级的漏洞数据。
+
+-   态势感知Agent版本过低
+
+    如果您服务器上的态势感知Agent版本过低，可能不支持漏洞扫描功能。如果您的态势感知Agent没有正常自动更新，建议您参考[安装Agent](../../../../cn.zh-CN/用户指南/接入态势感知/安装Agent.md#)手动安装最新版态势感知Agent。
+
+-   态势感知Agent离线
+
+    如果您服务器上的态势感知Agent显示为离线，您将无法通过漏洞管理的验证功能对您的服务器进行验证。建议您参考[Agent 离线排查](../../../../cn.zh-CN/用户指南/接入态势感知/Agent离线排查.md#)进行排查，确保您服务器上的态势感知Agent在线。
+
+
+## 为什么进行漏洞回滚操作会失败？ {#section_yh5_l2p_r2b .section}
+
+如果您通过态势感知漏洞管理功能对某个漏洞进行回滚操作时，提示回滚失败，您可参考以下可能原因：
+
+1.  确认您的服务器的态势感知Agent处于在线状态。如果您的服务器显示离线，请参考[Agent 离线排查](../../../../cn.zh-CN/用户指南/接入态势感知/Agent离线排查.md#)进行排查。
+2.  确认您服务器上该漏洞的相关文件是否已被手工修改或者删除。
+
+    **说明：** 如果在漏洞修复后相关文件已被手动修改或者删除，态势感知为了防止误改动您的文件，不会对该漏洞的相关文件进行回滚。
+
 
