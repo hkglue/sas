@@ -6,7 +6,7 @@
 
 态势感知Agent已集成于阿里云公共镜像中。如果您在购买ECS实例时选择公共镜像，并选择启用**安全加固**，则态势感知Agent默认通过镜像安装。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13631/4557_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13631/15349580864557_zh-CN.png)
 
 ## 查看服务器保护状态 {#section_izq_114_k2b .section}
 
@@ -17,7 +17,7 @@
 -   **保护中**表示Agent已安装且处于在线状态。
 -   **未受保护**表示Agent未安装或处于离线状态。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13631/6339_zh-CN.jpg)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13631/15349580876339_zh-CN.jpg)
 
 若您的服务器保护状态显示为**未受保护**，请按照以下方式，手动下载并安装态势感知Agent。
 
@@ -30,7 +30,7 @@
 安装前，请确认您的服务器环境符合以下条件：
 
 -   服务器在阿里云上，可以直接安装。
--   服务器不在阿里云上，与阿里云走Internet通信，应确保Intetnet连通。
+-   服务器不在阿里云上，与阿里云走Internet通信，应确保Internet连通。
 -   服务器不在阿里云上，与阿里云通过专线连接走内网通信，则您需要在域名解析记录中添加以下DNS配置，指定态势感知服务端DNS：
     -   `100.100.25.3 jsrv.aegis.aliyun.com`
     -   `100.100.25.4 update.aegis.aliyun.com`
@@ -67,7 +67,10 @@
 成功安装态势感知Agent后，建议您参照以下步骤进行验证：
 
 1.  检查您的服务器上态势感知Agent的AliYunDun和AliYunDunUpdate进程是否正常运行。关于态势感知Agent进程说明，请参考[Agent说明](intl.zh-CN/用户指南/接入态势感知/Agent说明.md#)。
-2.  在您的服务器上执行以下telnet命令，检查您的服务器是否能正常连通态势感知服务器。确保您的服务器能够连通至少一个jsrv和一个update服务域名。
+2.  在您的服务器上执行以下telnet命令，检查您的服务器是否能正常连通态势感知服务器：
+
+    **说明：** 确保您的服务器能够连通至少一个jsrv和一个update服务域名。
+
     -   `telnet jsrv.aegis.aliyun.com 80`
     -   `telnet jsrv2.aegis.aliyun.com 80`
     -   `telnet jsrv3.aegis.aliyun.com 80`
