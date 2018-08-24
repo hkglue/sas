@@ -1,11 +1,11 @@
 # 安全告警FAQ {#concept_isk_5st_q2b .concept}
 
--   [黑客入侵行为扫描主要扫描什么内容？是如何实现的？](cn.zh-CN/常见问题/安全告警FAQ.md#section_u11_k1n_q2b)
--   [ECS登录弱口令是指系统层面的RDP或者SSH扫描吗？](cn.zh-CN/常见问题/安全告警FAQ.md#section_yg2_c1n_q2b)
--   [如何处理SSH、RDP远程登录被拦截？](cn.zh-CN/常见问题/安全告警FAQ.md#section_d5z_fsk_s2b)
--   [为什么修改22端口后仍然出现密码暴力破解提示？](cn.zh-CN/常见问题/安全告警FAQ.md#section_ugq_wkp_r2b)
--   [为什么安全组或者防火墙规则已经屏蔽了RDP服务的3389端口，但RDP还是被有暴力破解的记录？](cn.zh-CN/常见问题/安全告警FAQ.md#section_xd4_g3t_q2b)
--   [被暴力破解成功之后该怎么处理？](cn.zh-CN/常见问题/安全告警FAQ.md#section_vvj_515_q2b)
+-   [黑客入侵行为扫描主要扫描什么内容？是如何实现的？](#)
+-   [ECS登录弱口令是指系统层面的RDP或者SSH扫描吗？](#)
+-   [如何处理SSH、RDP远程登录被拦截？](#)
+-   [为什么修改22端口后仍然出现密码暴力破解提示？](#)
+-   [为什么安全组或者防火墙规则已经屏蔽了RDP服务的3389端口，但RDP还是被有暴力破解的记录？](#)
+-   [被暴力破解成功之后该怎么处理？](#)
 
 ## 黑客入侵行为扫描主要扫描什么内容？是如何实现的？ {#section_u11_k1n_q2b .section}
 
@@ -27,12 +27,12 @@
 
     **说明：** 您可以将鼠标移至在阿里云管理控制台右上角的账户图标，单击**安全管控**打开云盾安全管控平台管理控制台。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17025/15336093818963_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17025/15350897498963_zh-CN.png)
 
 2.  定位到**白名单管理** \> **访问白名单**页面，单击**添加**。
 3.  将要加入白名单的IP地址填写在**来源IP**输入框中，并配置允许该IP地址登录的服务器。从左侧所有服务器框中选择目标服务器（可多选），并单击右向箭头，将其添加到右侧白名单配置生效的**已选**服务器框中。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17025/15336093818964_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17025/15350897498964_zh-CN.png)
 
 4.  配置完成后，单击**确定**。
 
@@ -42,7 +42,7 @@
 
 态势感知异常登录事件检测依据尝试登录SSH服务的频繁度来检测暴力破解攻击行为，与端口无关。因此，即使您已修改SSH服务的默认端口，当恶意攻击者尝试暴力破解您的SSH服务时，态势感知仍然能正常检测到攻击行为并为您提示告警信息。
 
-如果您的服务器被暴力破解成功，建议您参考[被暴力破解成功之后该怎么处理](cn.zh-CN/常见问题/安全告警FAQ.md#section_vvj_515_q2b)对您的服务器安全进行加固。
+如果您的服务器被暴力破解成功，建议您参考[被暴力破解成功之后该怎么处理](#)对您的服务器安全进行加固。
 
 ## 为什么安全组或者防火墙规则已经屏蔽了RDP服务的3389端口，但RDP还是被有暴力破解的记录？ {#section_xd4_g3t_q2b .section}
 
