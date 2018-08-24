@@ -1,10 +1,10 @@
 # 攻击访问威胁分析FAQ {#concept_bnj_n2b_r2b .concept}
 
--   [如何查看威胁分析中的普通攻击记录？](cn.zh-CN/常见问题/攻击访问威胁分析FAQ.md#section_p2f_spt_q2b)
--   [态势感知支持将应用攻击数据导出进行自主分析吗？](cn.zh-CN/常见问题/攻击访问威胁分析FAQ.md#section_s5r_3ft_q2b)
--   [为什么在攻击记录中出现针对非自己域名的攻击记录？](cn.zh-CN/常见问题/攻击访问威胁分析FAQ.md#section_l4c_yfc_zdb)
--   [为什么无法找到应用攻击记录中被攻击的URL地址？](cn.zh-CN/常见问题/攻击访问威胁分析FAQ.md#section_ut1_s2t_q2b)
--   [为什么在访问记录中出现针对非自己域名（如www.baidu.com）的访问记录？](cn.zh-CN/常见问题/攻击访问威胁分析FAQ.md#section_j4c_yfc_zdb)
+-   [如何查看威胁分析中的普通攻击记录？](#)
+-   [态势感知支持将应用攻击数据导出进行自主分析吗？](#)
+-   [为什么在攻击记录中出现针对非自己域名的攻击记录？](#)
+-   [为什么无法找到应用攻击记录中被攻击的URL地址？](#)
+-   [为什么在访问记录中出现针对非自己域名（如www.baidu.com）的访问记录？](#)
 
 ## 如何查看威胁分析中的普通攻击记录？ {#section_p2f_spt_q2b .section}
 
@@ -26,7 +26,7 @@
 
 ## 为什么在访问记录中出现针对非自己域名（如www.baidu.com）的访问记录？ {#section_j4c_yfc_zdb .section}
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13683/15336094104493_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13683/15350897734493_zh-CN.png)
 
 这种情况是因为访客绑定了host进行访问。访问分析基于用户IP资产进行访问情况统计，而非通过域名资产统计，所以只要是向用户名下IP发起过的HTTP请求，不管请求的是不是用户自己的域名都会被统计在内。
 
