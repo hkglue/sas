@@ -15,16 +15,16 @@ The following table lists the features of TDS and compares the differences betwe
 
 |Feature|Item|Description|Basic Edition|Enterprise Edition|
 |-------|----|-----------|-------------|------------------|
-|Security events|Unusual logon detection|Basic-   Logon from unusual locations: TDS automatically records locations that are commonly used to log on to Elastic Compute Service \(ECS\) instances. You can also manually specify these locations. The system generates an alarm when a logon from an unusual location is detected.
--   Brute-force password cracking: detects a logon to ECS instances after multiple failed attempts, which may be caused by brute-force password cracking.
+|Security events|Unusual logon detection|Basic detection-   Logon from unusual locations: TDS automatically records locations that are commonly used to log on to Elastic Compute Service \(ECS\) instances. You can also manually specify these locations in TDS console. The system will generate an alarm when a logon from an unusual location is detected.
+-   Brute-force cracking: TDS detects a logon to ECS instances after multiple failed attempts, which may be caused by brute-force password cracking.
 
 |√|√|
-|Advanced-   Invalid IP logon: This feature allows you to specify valid IP addresses to be used to log on to ECS instances, such as bastion host IP addresses and local area network \(LAN\) IP addresses. Therefore, this system generates an alarm when detecting a logon with an unspecified IP address.
+|Advanced detection-   Invalid IP logon: This feature allows you to configure valid IP addresses for logging on to ECS instances, such as bastion host IP addresses and local area network \(LAN\) IP addresses. Therefore, this system generates an alarm when detecting a logon with an unspecified IP address.
 -   Invalid account logon: This feature allows you to specify the valid accounts for logging on to ECS instances. Therefore, this system generates an alarm when detecting a logon with an unspecified account.
 -   Logon during invalid periods: This feature allows you to specify valid periods, such as office hours, for logging on to ECS instances. Therefore, this system generates an alarm when detecting a logon that does not occur during the specified period.
 
 |X|√|
-|Security events|Webshell removal|Webshell detection: checks both instances and networks for web scripts, such as PHP, ASP, and JSP files. -   Instance check: monitors the changes of Web directories on an instance in real time.
+|Security events|Webshell removal|Webshell detection: checks both instances/servers and networks for web scripts, such as PHP, ASP, and JSP files. -   Instance check: monitors the changes of Web directories on an instance in real time.
 -   Network check: simulates Webshell execution and analyzes network protocols.
 
 |√ \(Checks instances only.\)|√|
