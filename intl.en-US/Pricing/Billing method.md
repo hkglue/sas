@@ -14,9 +14,9 @@ You are billed for the validity period specified in your subscription.
 
 \(Number of assets \* Price of protecting one server + Value-added functions\) \* Validity period of subscription
 
--   **Number of assets:**Refers to the number of billable assets that require TDS's protection, including ECS instances and external servers. The default Number of assets is the number of ECS instances you own, and the number of assets that you specify cannot be less than the number of your ECS instances.
--   **Value-added functions:**The value-added functions provided by TDS and must be additionally purchased, such as Log service.
--   **Price of protecting one server:**You could check the detailed price of protecting one server and the value-added functions on [TDS purchase page](https://common-buy-intl.aliyun.com/?spm=a3c0i.intl-en-product-TDS.0.0.47de69c8zc2xog&commodityCode=sas_intl#/buy).
+-   **Number of assets**: Refers to the number of billable assets that require TDS's protection, including ECS instances and external servers. The default Number of assets is the number of ECS instances you own, and the number of assets that you specify cannot be less than the number of your ECS instances.
+-   **Value-added functions**: The value-added functions provided by TDS must be additionally purchased, such as Log service.
+-   **Price of protecting one server**: You could check the detailed price of protecting one server and the value-added functions on [TDS purchase page](https://common-buy-intl.aliyun.com/?spm=a3c0i.intl-en-product-TDS.0.0.47de69c8zc2xog&commodityCode=sas_intl#/buy).
 
 **Note:** TDS also protects assets such as SLB and NAT gateways. However, TDS only charges for protecting your ECS instances and external servers. All other assets are currently protected for free.
 
