@@ -9,5 +9,4 @@ Threat Detection Service \(TDS\) can be used in the following scenarios:
 -   Tracking of intrusions, such as webshell injections, malware, and ransomware in ECS, to analyze the patterns of intrusions and locate the causes.
 -   Review the related events on the same page, and make you easier to analyze and handle the events and alerts.
 -   Customize the rules of alerts based on your business requirements.
--   Synchronize your real-time security overview onto a big screen in various forms.
 
