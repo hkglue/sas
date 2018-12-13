@@ -98,4 +98,5 @@ Network logs-   Web session logs: collects 5-tuples for Web sessions between ins
 
 |X|Value-added|
 |Log analysis|Overall log analysis|TDS provides real-time log search and analysis, which covers all types of logs for TDS, such as starting of server process, outgoing network connection, system logon, DNS request, etc.|X|√|
+|Alert correlation analysis|Alert correlation analysis|Alert correlation rules automatically group the related events together and then generate a related alert. It can help you see all the related alerts on one page, and provide you with centralized management on the alerts and related events.|X|√|
 
