@@ -1,29 +1,79 @@
 # Overview {#concept_jxf_z34_k2b .concept}
 
-The Threat Detection Service \(TDS\) overview page allows you to view brief information about threats that have been detected on all assets. You can upgrade and renew services, scale up the number of assets, and modify notification reception rules.
+As the security operation center of Alibaba Cloud, the **Overview** page of the Threat Detection Service \(TDS\) console displays the threats to, and the safety score of all your assets, and all the Alibaba Cloud Security services you have bought. You can upgrade TDS, renew your TDS service, scale up your assets, and modify the notification method.
 
-To view security issues and perform operations, follow these steps:
+On the **Overview** page, you can view important security information of your assets and execute related operations.
 
-1.  Log on to the [TDS console](https://yundun.console.aliyun.com/?p=sas).
-2.  Go to the Overview page. You can view asset security information and perform the following tasks on this page:
-    -   **Upgrade TDS, scale up assets, and renew services**
-        -   To upgrade TDS from Basic Edition to Enterprise Edition, click **Upgrade** in the upper-right corner. If you want to use baseline check, asset fingerprint, and more functions, you can click **Upgrade** and purchase the enterprise service. For more information, see [Purchasing Threat Detection Service](../../../../intl.en-US/Pricing/Purchase Threat Detection Service.md#).
-        -   The Enterprise Edition shows the service expiration date and total number of assets in the upper-right corner of the overview page. You can click **Renew** to renew your TDS service.
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15448/154748288937206_en-US.png)
 
-            **Note:** The **Asset Scaling** button is available only if the current number of assets has reached 120% of the asset count that you have specified when purchasing TDS. To guarantee the availability of all features, we recommend that you scale up the number of assets.
+The **Overview** page includes the following modules:
 
-    -   **View threat statistics**
+-   TDS edition: Click **Upgrade to Enterprise Edition**/**Renew**on the top right of the Overview page, you can upgrade to your TDS to the Enterprise Edition, scale up your assets, or renew your TDS service.
 
-        Statistics about events, vulnerabilities, and baseline risks are displayed in the upper area of the overview page. You can click the corresponding number to view related details. On the right side, you can view statistics about the security status of all assets, that is, how many assets are protected and how many are not protected. Click the number under **Uninspected Assets**, and you can go directly to the Install/Uninstall TDS Agent page where you can install the TDS agent to your server. For more information, see [Install the TDS agent](intl.en-US/User Guide/Access Threat Detection Service/Install the TDS agent.md#).
+    **Basic Edition**：
 
-        You can click the **Alert Settings** button to select the alerts that you want to receive based on the severity levels of events, vulnerabilities, and baseline risks.
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15448/154748288937208_en-US.png)
 
-    -   **View recently unhandled alerts and top 5 vulnerable assets**
+    **Enterprise Edition**：
 
-        The middle-left area of the overview page displays the recently unhandled alerts. The middle-right area of the overview page displays the top 5 vulnerable assets. You can click a record to go to the corresponding detail page.
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15448/154748288937207_en-US.png)
 
-    -   **View security events**
+-   **Safety score**: Safety score displays your assest's security score evaluated by TDS, and the number of protected and unprotected assets. For specific score descriptions, see the Safety score table below.
 
-        The bottom area of the overview page displays the Security Issues chart. This chart shows the changes of the number of events, vulnerabilities, and baseline risks in the last 7 or 30 days.
+    To add unprotected assets under the protection of TDS, click the number under **Unprotected Assets** and on the displayed Install/Uninstall TDS Agent page, install the TDS agent. For more information, see [Install the TDS agent](reseller.en-US/User Guide/Access Threat Detection Service/Install the TDS agent.md#).
 
+-   **Urgent Vulnerabilities**: Urgent Vulnerabilities displays the latest discovered urgent vulnerabilities of your assets.
+-   **Threat statistics**: Threat statistics includes the number of security events, attacks, vulnerabilities, and vulnerable baseline configurations.
+-   **Cloud platform best security practices**: This module displays the detected baseline risks of your cloud products.
+-   **Safe operation**: This module displays the number of events, vulnerabilities, and vulnerable baseline configurations handled during the week in the form of column charts.
+-   Information on the Alibaba Cloud Security products you have bought.
+
+## Upgrade to the Enterprise Edition, scale up assets, and renew your TDS service {#section_wqz_1zk_wfb .section}
+
+TDS provides a Basic Edition and an Enterprise Edition. You can view information on your specific edition in the upper-right corner of the **Overview** page. For more information on the differences in features of the Basic Edition and the Enterprise Edition, see [Features](https://help.aliyun.com/knowledge_detail/42306.html).
+
+-   **Basic Edition**: The edition of TDS is shown in the upper-right corner of the page. An **Upgrade to Enterprise Edition** button is also displayed. If you upgrade your TDS Basic Edition to the Enterprise Edition, you are able to use such advanced functions as baseline checks, asset fingerprints, malicious processes \(malware checking\), and log analysis.
+
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15448/15474828896876_en-US.png)
+
+-   **Enterprise Edition**: The expiration date of your TDS service, and the size of your assets \(the number of servers\) are displayed in the upper-right corner of the page. A **Renew** button is also displayed.
+
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15448/154748288937207_en-US.png)
+
+    **Note:** If your current number of servers exceeds the number that you specified when purchasing TDS, an **Asset Scaling** button is displayed in the upper-right corner of the page. To guarantee the availability of all features, we recommend that you scale up your assets.
+
+
+## Security score table {#section_jxm_rrk_wfb .section}
+
+|Security score|Description|
+|--------------|-----------|
+|95–100|Your assets are fully secured.|
+|85–94|There are some security risks to your assets. We recommend that you strengthen the security of your servers and your system as soon as possible.|
+|70–84|There are many security risks in your assets detected by TDS. We highly recommend that you strengthen the security and protection of your system as soon as possible.|
+|69 and lower|Your assets are exposed to security risks and may be easily compromised. We recommend that you immediately strengthen the security and protection of your system.|
+
+|Impact|Strengthening suggestion|
+|------|------------------------|
+|Lack of a security operation center|Establish an in-depth defense system. If you have any queries, submit a ticket for technical support.|
+|Unfixed vulnerabilities|Fix the vulnerabilities. For more information, see Vulnerabilities.|
+|Unhandled security events|Handle the security events in a timely manner.|
+|Lack of host protection|Enable the enterprise edition of Server Guard.|
+|The protection status is offline \(the TDS agent is not installed or offline\).|Install the TDS agent. For more information.|
+|Web-CMS vulnerabilities|Fix the Web-CMS vulnerabilities.|
+|System software vulnerabilities|Fix the software vulnerabilities.|
+|Risks detected by baseline checks|Fix the vulnerabilities of baseline.|
+|Unexpected logons|Check and handle the unexpected logons.|
+|Webshell threats|Check and handle the webshell files.|
+|Host exceptions|Handle the host exception events.|
+
+## Threat statistics {#section_wt4_szk_wfb .section}
+
+The **Overview** page displays the statistics of the threats that TDS detects in all your assets, and the corresponding trend diagrams, including:
+
+-   **Events**: Number of unhandled security events.
+-   **Times of attacks**: Number of attacks today.
+-   **Vulnerabilities**: Number of unhandled vulnerabilities.
+-   **Baseline check**: Number of vulnerable baseline configurations.
+
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15448/154748289037209_en-US.png)
 
