@@ -4,7 +4,7 @@
 
 如果您的态势感知Agent处于离线状态，请按照以下步骤进行排查：
 
-1.  登录您的服务器，查看态势感知Agent相关进程（AliYunDun和AliYunDunUpdate）是否正常运行。 
+1.  登录您的服务器，查看态势感知Agent相关进程（`AliYunDun`和`AliYunDunUpdate`）是否正常运行。 
 
     如果态势感知Agent相关进程无法运行，建议您重启服务器，或者参考[安装Agent](cn.zh-CN/用户指南/接入态势感知/安装Agent.md#)重新安装态势感知Agent。
 
@@ -12,13 +12,13 @@
 
         在任务管理器中，查看相关进程是否正常运行。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13634/4635_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13634/15477795654635_zh-CN.png)
 
     -   **Linux系统**
 
         执行`top`命令，查看相关进程是否正常运行。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13634/4636_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13634/15477795654636_zh-CN.png)
 
 2.  对于首次安装态势感知Agent的服务器，如果在安装Agent后，保护状态仍然为**未受保护**，请参考以下方法，重新启动态势感知Agent： 
     -   Linux 系统：执行`killall AliYunDun && killall AliYunDunUpdate && /usr/local/aegis/aegis_client/aegis_10_xx/AliYunDun`命令。
@@ -27,7 +27,7 @@
 
     -   Windows 系统：在服务项中重新启动以下两个服务项，选中对应服务，右键选择重新启动即可。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13634/4637_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13634/15477795654637_zh-CN.png)
 
 3.   检查您的服务器网络连接是否正常。 
     -   服务器有公网IP（如经典网络、EIP、云外机器）
