@@ -12,13 +12,13 @@
 
         在任务管理器中，查看相关进程是否正常运行。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13634/15477794724635_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13634/15514048724635_zh-CN.png)
 
     -   **Linux系统**
 
         执行`top`命令，查看相关进程是否正常运行。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13634/15477794724636_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13634/15514048724636_zh-CN.png)
 
 2.  对于首次安装态势感知Agent的服务器，如果在安装Agent后，保护状态仍然为**未受保护**，请参考以下方法，重新启动态势感知Agent： 
     -   Linux 系统：执行`killall AliYunDun && killall AliYunDunUpdate && /usr/local/aegis/aegis_client/aegis_10_xx/AliYunDun`命令。
@@ -27,7 +27,7 @@
 
     -   Windows 系统：在服务项中重新启动以下两个服务项，选中对应服务，右键选择重新启动即可。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13634/15477794724637_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13634/15514048724637_zh-CN.png)
 
 3.   检查您的服务器网络连接是否正常。 
     -   服务器有公网IP（如经典网络、EIP、云外机器）
@@ -49,8 +49,8 @@
         -   100.100.25.0/24 80 443
     3.  检查您的服务器公网带宽是否为零。如果您的服务器公网带宽为零，请参考以下步骤进行处理：
         1.  在您服务器的hosts文件添加以下域名解析记录：
-            -   `100.100.25.3 jsrv.aegis.aliyun.com`
-            -   `100.100.25.4 update.aegis.aliyun.com`
+            -   国内经典网络： `100.100.110.61 jsrv.aegis.aliyun.com`、`100.100.45.131 jsrv.aegis.aliyun.com``100.100.110.62 update.aegis.aliyun.com`和 `100.100.45.29 update.aegis.aliyun.com`
+            -   国外经典网络： `100.100.103.52 jsrv.aegis.aliyun.com`、`100.100.30.54 jsrv.aegis.aliyun.com` 、`100.100.30.55 update.aegis.aliyun.com`和`100.100.103.54 update.aegis.aliyun.com`
         2.  修改hosts文件后，执行`ping jsrv.aegis.aliyun.com`命令。
 
             **说明：** 如果返回的结果不是`100.100.25.3`，请您重启服务器或检查服务器DNS服务是否有故障。
