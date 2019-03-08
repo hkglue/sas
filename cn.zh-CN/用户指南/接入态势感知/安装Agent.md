@@ -1,23 +1,17 @@
 # 安装Agent {#concept_dl4_ykc_zdb .concept}
 
-态势感知Agent是态势感知提供的本地插件，您必须在服务器操作系统上安装态势感知Agent，才能使用态势感知提供的安全防护服务。
-
-## 通过阿里云公共镜像自动安装 {#section_prp_z1d_zdb .section}
-
-态势感知Agent已集成于阿里云公共镜像中。如果您在购买ECS实例时选择公共镜像，并选择启用**安全加固**，则态势感知Agent默认通过镜像安装。
-
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13631/15349580864557_zh-CN.png)
+态势感知Agent是态势感知提供的本地插件，您必须在服务器操作系统上安装态势感知Agent才能使用态势感知提供的安全防护服务。
 
 ## 查看服务器保护状态 {#section_izq_114_k2b .section}
 
 您可以查看服务器的保护状态来确认态势感知Agent是否已安装及其在线/离线状态。
 
-登录[云盾态势感知控制台](https://yundun.console.aliyun.com/?p=sas)，在资产列表页面查看所有服务器的**保护状态**：
+登录[云盾态势感知控制台](https://account.alibabacloud.com/login/login.htm)，在资产列表页面查看所有服务器的**保护状态**：
 
 -   **保护中**表示Agent已安装且处于在线状态。
 -   **未受保护**表示Agent未安装或处于离线状态。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13631/15349580876339_zh-CN.jpg)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13631/15520317806339_zh-CN.jpg)
 
 若您的服务器保护状态显示为**未受保护**，请按照以下方式，手动下载并安装态势感知Agent。
 
@@ -39,10 +33,12 @@
 
 参照以下步骤，手动安装态势感知Agent：
 
-1.  登录[云盾态势感知控制台](https://yundun.console.aliyun.com/?p=sas)。
-2.  在左侧导航栏，单击**设置**。
-3.  单击**安装/卸载插件**。
-4.  根据服务器操作系统，选择对应安装步骤，获取并安装最新版本的态势感知Agent。
+1.  登录
+2.  [云盾态势感知控制台](https://account.alibabacloud.com/login/login.htm)
+3.  。
+4.  在左侧导航栏，单击**设置**。
+5.  单击**安装/卸载插件**。
+6.  根据服务器操作系统，选择对应安装步骤，获取并安装最新版本的态势感知Agent。
     -   **Windows系统**
         1.  在安装/卸载插件页面，单击**点击下载**，下载最新版本态势感知Agent安装文件到本地计算机。
         2.  将安装文件上传至您的Windows服务器。例如，您可以通过FTP工具，将安装文件上传到服务器。
@@ -58,7 +54,7 @@
 
             **说明：** 该安装命令包含从阿里云站点下载最新版本的态势感知Agent，请确认您的服务器已连接公网。
 
-5.  态势感知Agent安装完成约五分钟后，您可以在云盾态势感知控制台资产列表页，查看服务器的保护状态：
+7.  态势感知Agent安装完成约五分钟后，您可以在云盾态势感知控制台资产列表页，查看服务器的保护状态：
     -   阿里云服务器会从**未受保护**变成**保护中**。
     -   非阿里云服务器会被添加至服务器列表。
 
