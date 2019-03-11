@@ -4,7 +4,7 @@ As the security operation center of Alibaba Cloud, the **Overview** page of the 
 
 On the **Overview** page, you can view important security information of your assets and execute related operations.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15448/154748288937206_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15448/155229653137206_en-US.png)
 
 The **Overview** page includes the following modules:
 
@@ -12,11 +12,11 @@ The **Overview** page includes the following modules:
 
     **Basic Edition**：
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15448/154748288937208_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15448/155229653137208_en-US.png)
 
     **Enterprise Edition**：
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15448/154748288937207_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15448/155229653137207_en-US.png)
 
 -   **Safety score**: Safety score displays your assest's security score evaluated by TDS, and the number of protected and unprotected assets. For specific score descriptions, see the Safety score table below.
 
@@ -30,15 +30,15 @@ The **Overview** page includes the following modules:
 
 ## Upgrade to the Enterprise Edition, scale up assets, and renew your TDS service {#section_wqz_1zk_wfb .section}
 
-TDS provides a Basic Edition and an Enterprise Edition. You can view information on your specific edition in the upper-right corner of the **Overview** page. For more information on the differences in features of the Basic Edition and the Enterprise Edition, see [Features](https://help.aliyun.com/knowledge_detail/42306.html).
+TDS provides a Basic Edition and an Enterprise Edition. You can view information on your specific edition in the upper-right corner of the **Overview** page. For more information on the differences in features of the Basic Edition and the Enterprise Edition, see [Features](https://www.alibabacloud.com/help/doc-detail/42306.htm).
 
 -   **Basic Edition**: The edition of TDS is shown in the upper-right corner of the page. An **Upgrade to Enterprise Edition** button is also displayed. If you upgrade your TDS Basic Edition to the Enterprise Edition, you are able to use such advanced functions as baseline checks, asset fingerprints, malicious processes \(malware checking\), and log analysis.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15448/15474828896876_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15448/15522965316876_en-US.png)
 
 -   **Enterprise Edition**: The expiration date of your TDS service, and the size of your assets \(the number of servers\) are displayed in the upper-right corner of the page. A **Renew** button is also displayed.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15448/154748288937207_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15448/155229653137207_en-US.png)
 
     **Note:** If your current number of servers exceeds the number that you specified when purchasing TDS, an **Asset Scaling** button is displayed in the upper-right corner of the page. To guarantee the availability of all features, we recommend that you scale up your assets.
 
@@ -75,5 +75,5 @@ The **Overview** page displays the statistics of the threats that TDS detects in
 -   **Vulnerabilities**: Number of unhandled vulnerabilities.
 -   **Baseline check**: Number of vulnerable baseline configurations.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15448/154748289037209_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15448/155229653137209_en-US.png)
 
