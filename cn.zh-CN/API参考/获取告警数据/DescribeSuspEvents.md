@@ -1,4 +1,4 @@
-# DescribeSuspEvents {#doc_api_1058142 .reference}
+# DescribeSuspEvents {#doc_api_1058396 .reference}
 
 查询异常事件列表。
 
@@ -242,7 +242,7 @@ http(s)://[Endpoint]/?Action=DescribeSuspEvents
 			"EventSubType":"XorDDoS木马"
 		},
 		{
-			"Uuid":"bf6b30d3-eea8-4924-9f0a-98461cb8ffeb",
+			"Uuid":"bf6b30d3-eea8-4924-9f0a-XXXXXXXXXXXX",
 			"EventStatus":1,
 			"LastTime":"2018-10-24 21:01:01",
 			"InternetIp":"10.0.0.0",
