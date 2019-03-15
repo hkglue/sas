@@ -25,7 +25,7 @@ Follow these steps to install the TDS agent on servers in private networks:
             -   64-bit Linux: [TDS agent package](https://aegis.alicdn.com/download/AliAqsInstall_64.sh)
         2.  Upload the TDS agent package to your instance. For example, you can use an FTP client to upload the package to the instance.
         3.  Log on to your Linux instance as an administrator.
-        4.  Locate the directory that stores the uploaded TDS agent package and, depending on your system requirements, run one of the following commands to install the TDS agent:
+        4.  Locate the directory that stores the uploaded TDS agent package, depending on your system requirements, run one of the following commands to install the TDS agent:
 
             -   32-bits Linux: `chmod +x AliAqsInstall_32.sh && . /AliAqsInstall_32.sh xxxxxx`
             -   64-bits Linux: `chmod +x AliAqsInstall_64.sh && . /AliAqsInstall_64.sh xxxxxx`
