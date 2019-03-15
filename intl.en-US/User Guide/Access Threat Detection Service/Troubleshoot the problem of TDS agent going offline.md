@@ -1,24 +1,24 @@
 # Troubleshoot the problem of TDS agent going offline {#task_fkr_2lc_zdb .task}
 
-If you have followed instructions in [Install the TDS agent](reseller.en-US/User Guide/Access Threat Detection Service/Install the TDS agent.md#) and successfully installed the Threat Detection Service \(TDS\) agent on your server, but the security status of the server is still **Unprotected**, then the agent goes doffline. This article describes how to resolve this issue.
+If you have followed instructions in [Install the TDS agent](intl.en-US/User Guide/Access Threat Detection Service/Install the TDS agent.md#) and successfully installed the Threat Detection Service \(TDS\) agent on your server, but the security status of the server is still **Unprotected**, then the agent goes doffline. This article describes how to resolve this issue.
 
 If your TDS agent is offline, follow these steps to resolve the issue:
 
 1.  Log on to your server and check whether the TDS agent processes \(AliYunDun and AliYunDunUpdate\) are running. 
 
-    If the TDS agent processes are not running, we recommend that you restart your server or reinstall the TDS agent. For more information, see [Install the TDS agent](reseller.en-US/User Guide/Access Threat Detection Service/Install the TDS agent.md#).
+    If the TDS agent processes are not running, we recommend that you restart your server or reinstall the TDS agent. For more information, see [Install the TDS agent](intl.en-US/User Guide/Access Threat Detection Service/Install the TDS agent.md#).
 
     -   **Windows**
 
         Open the Task Manager and check whether the following processes are running.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13634/15514263354635_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13634/15526334694635_en-US.png)
 
     -   **Linux**
 
         Run the `top` command to check whether the following processes are running.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13634/15514263354636_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13634/15526334694636_en-US.png)
 
 2.  If you have installed the TDS agent on a server for the first time and the security status of the server is **Unprotected** after installation, you can restart the TDS agent using the following methods: 
     -   Linux: Run the following command: `killall AliYunDun && killall AliYunDunUpdate && /usr/local/aegis/aegis_client/aegis_10_xx/AliYunDun`.
@@ -27,7 +27,7 @@ If your TDS agent is offline, follow these steps to resolve the issue:
 
     -   Windows: Restart the two services displayed in the following screenshot by right-clicking and selecting Restart.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13634/15514263354637_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13634/15526334704637_en-US.png)
 
 3.   Check whether the network connection on your server is normal. 
     -   Servers with public IP addresses \(for example, servers connected to classic networks, EIPs, or external hosts\)
