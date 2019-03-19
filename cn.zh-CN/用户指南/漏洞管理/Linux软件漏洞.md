@@ -1,33 +1,32 @@
 # Linux软件漏洞 {#concept_akr_grq_32b .concept}
 
-本文档介绍了态势感知检测到的Linux软件漏洞详细信息以及相关操作。
+本文档介绍了云安全中心检测到的Linux软件漏洞详细信息以及相关操作。
 
-**说明：** 态势感知**基础版**只提供漏洞检测，不提供漏洞修复的服务；如需一键修复漏洞，请开通态势感知**企业版**。基础版和企业版详细功能介绍参见[功能特性](../../../../../intl.zh-CN/产品简介/功能特性.md#)。
+**说明：** 云安全中心**基础版**只提供漏洞检测，不提供漏洞修复的服务；如需一键修复漏洞，请开通云安全中心**企业版**。基础版和企业版详细功能介绍参见[功能特性](../../../../../cn.zh-CN/产品简介/功能特性.md#)。
 
 ## 操作步骤 {#section_lst_wsc_ygb .section}
 
-1.  登录阿里云[态势感知控制台](https://yundun.console.aliyun.com/?p=sas)。
-2.  登录[阿里云态势感知控制台](http://partners-intl.console.aliyun.com/#/sas)。
-3.  定位到**漏洞管理** \> **Linux软件漏洞**。
+1.  登录[云安全中心控制台](https://yundun.console.aliyun.com/?p=sas)。
+2.  定位到**漏洞管理** \> **Linux软件漏洞**。
 
-    您可在**Linux软件漏洞**页面的漏洞列表中查看态势感知检测到的Linux漏洞关联的漏洞公告，漏洞公告名称通常以USN、RHSA或CVE字符开头。
+    您可在**Linux软件漏洞**页面的漏洞列表中查看云安全中心检测到的Linux漏洞关联的漏洞公告，漏洞公告名称通常以USN、RHSA或CVE字符开头。
 
     单击漏洞公告名称可展开对应的漏洞详情页面。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15298/155168724939856_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15298/155301435839856_zh-CN.png)
 
-4.  您可以在Linux软件漏洞页面查看态势感知检测到的所有Linux软件漏洞聚合成的漏洞公告、查看漏洞详情、执行验证和修复漏洞、根据漏洞的严重程度和状态对特定漏洞进行定位、将漏洞加入白名单或忽略漏洞。
+3.  您可以在Linux软件漏洞页面查看云安全中心检测到的所有Linux软件漏洞聚合成的漏洞公告、查看漏洞详情、执行验证和修复漏洞、根据漏洞的严重程度和状态对特定漏洞进行定位、将漏洞加入白名单或忽略漏洞。
     -   **查看漏洞详情**
 
         单击漏洞列表中的漏洞公告名称打开漏洞详情页面。您可在漏洞详情页面查看该漏洞公告关联的所有漏洞、漏洞的描述、漏洞紧急程度、漏洞影响的所有资产信息、漏洞的状态等信息，并可对漏洞执行验证、修复或忽略的操作。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15298/155168724939857_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15298/155301435839857_zh-CN.png)
 
         漏洞详情页面可展示该漏洞所有**关联漏洞**，即该漏洞影响的所有资产信息，方便您对所有相关的漏洞进行分析和批量处理。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15298/155168725039858_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15298/155301435839858_zh-CN.png)
 
-        在漏洞详情页面的漏洞列表中单击漏洞影响的**资产名称**可定位到**资产列表** \> **漏洞信息**页面，为您展示该资产所有关联漏洞的信息。![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15298/155168725039876_zh-CN.png)
+        在漏洞详情页面的漏洞列表中单击漏洞影响的**资产名称**可定位到**资产列表** \> **漏洞信息**页面，为您展示该资产所有关联漏洞的信息。![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15298/155301435839876_zh-CN.png)
 
     -   **查看漏洞的修复紧急度建议**
 
@@ -36,7 +35,7 @@
         -   红色图标表示态势感知判定该漏洞修复紧急程度**高**
         -   橙色图标表示态势感知判定该漏洞修复紧急程度**中**
         -   灰色图标表示态势感知判定该漏洞修复紧急程度**低**
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/155168725039814_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/155301435839814_zh-CN.png)
 
         **说明：** 建议立即修复高危漏洞（紧急程度高）。
 
@@ -44,11 +43,11 @@
 
         在Linux漏洞详情页面单击**漏洞编号**可跳转至阿里云漏洞库。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15298/155168725039873_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15298/155301435839873_zh-CN.png)
 
         您可在阿里云漏洞库页面查看该漏洞更为详细的信息，包括漏洞的详细描述、危险等级、披露时间、修复建议等信息。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15298/155168725039874_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15298/155301435839874_zh-CN.png)
 
     -   **查看漏洞严重等级**
 
@@ -60,7 +59,7 @@
 
         单击**验证**后，该漏洞的**状态**转为**验证中**。需要等待数秒后漏洞验证才可完成。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15298/155168725039859_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15298/155301435839859_zh-CN.png)
 
     -   **修复漏洞**
 
@@ -70,7 +69,7 @@
 
         您可在Linux软件漏洞页面通过筛选漏洞危险等级（高、中、低）、漏洞处理状态（已处理、未处理）或输入漏洞名称定位到相关的漏洞。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15298/155168725039860_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15298/155301435939860_zh-CN.png)
 
         **说明：** 搜索漏洞名称支持模糊查询。
 
@@ -78,29 +77,29 @@
 
         您可在Linux软件漏洞页面勾选漏洞列表左侧的复选框后单击**加入白名单**，将该漏洞加入白名单中。加入白名单后，态势感知将不再对白名单中的漏洞进行告警。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15298/155168725039861_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15298/155301435939861_zh-CN.png)
 
-        加入白名单的漏洞将从Linux软件漏洞的漏洞列表中移除，并记录在[漏洞管理设置](intl.zh-CN/用户指南/漏洞管理/漏洞管理设置.md#)页面的**漏洞白名单配置**列表中。
+        加入白名单的漏洞将从Linux软件漏洞的漏洞列表中移除，并记录在[漏洞管理设置](cn.zh-CN/用户指南/漏洞管理/漏洞管理设置与加白名单.md#)页面的**漏洞白名单配置**列表中。
 
-        如需恢复态势感知对白名单中的漏洞进行检测和告警提示，可在漏洞管理设置页面**移除**该漏洞。
+        如需恢复云安全中心对白名单中的漏洞进行检测和告警提示，可在漏洞管理设置页面**移除**该漏洞。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/155168725039827_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/155301435939827_zh-CN.png)
 
     -   **忽略漏洞**
 
         您可在Linux软件漏洞页面勾选漏洞列表左侧的复选框后单击**忽略**，态势感知将不再提示该漏洞。
 
-        **说明：** 被**忽略**的漏洞状态将转为**已处理**。如需态势感知继续对该漏洞进行告警提示，可在**已处理**的漏洞列表中找到该漏洞并对其**取消忽略**。
+        **说明：** 被**忽略**的漏洞状态将转为**已处理**。如需云安全中心继续对该漏洞进行告警提示，可在**已处理**的漏洞列表中找到该漏洞并对其**取消忽略**。
 
     -   **导出漏洞**
 
-        您可在Linux软件漏洞页面单击**导出**将态势感知检测到的所有Windows系统漏洞统一导出并保存到本地。导出的文件为Excel格式。
+        您可在Linux软件漏洞页面单击**导出**将云安全中心检测到的所有Windows系统漏洞统一导出并保存到本地。导出的文件为Excel格式。
 
         **说明：** 根据您资产中漏洞数据的大小，导出漏洞列表可能需要耗费一定时间，请耐心等待。
 
-    -   您可在漏洞详情页面单击![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/155168725039821_zh-CN.png)按钮保存筛选出的所有漏洞为一个漏洞修复批次，方便您对该批次漏洞的状态进行持续跟踪。
+    -   您可在漏洞详情页面单击![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/155301435939821_zh-CN.png)按钮保存筛选出的所有漏洞为一个漏洞修复批次，方便您对该批次漏洞的状态进行持续跟踪。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15298/155168725039862_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15298/155301435939862_zh-CN.png)
 
 
 ## Linux软件漏洞详情页说明 {#section_dhc_1vq_32b .section}
@@ -145,7 +144,7 @@
 低风险漏洞，您可根据业务需要尽快修复或暂不修复。
 
 
-您可参考[漏洞修复优先级排序参考](../../../../../intl.zh-CN/常见问题/常见问题隐藏目录/漏洞修复优先级排序参考.md#)文档进行处理。
+您可参考[漏洞修复优先级排序参考](../../../../../cn.zh-CN/常见问题/常见问题隐藏目录/漏洞修复优先级排序参考.md#)文档进行处理。
 
 |
 |详情|您可单击漏洞详情页面右侧**详情**查看修复命令、漏洞命中原因等信息。-   **修复命令**：执行该命令可修复对应的Linux软件漏洞。
