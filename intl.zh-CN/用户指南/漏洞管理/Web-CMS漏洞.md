@@ -1,39 +1,38 @@
 # Web-CMS漏洞 {#concept_y4c_nzc_zdb .concept}
 
-态势感知支持检测并快速修复Web-CMS漏洞。可监控网站目录，识别通用建站软件，通过漏洞文件比对方式检测建站软件中的漏洞。
+云安全中心支持检测并快速修复Web-CMS漏洞。可监控网站目录，识别通用建站软件，通过漏洞文件比对方式检测建站软件中的漏洞。
 
-Web-CMS 漏洞功能通过及时获取最新的漏洞预警和相关补丁，并通过云端下发补丁更新，实现漏洞快速发现、快速修复的功能。态势感知Web-CMS 漏洞功能可以帮助您解决漏洞发现不及时、不会修复漏洞、无法批量进行补丁更新等诸多问题。
+Web-CMS 漏洞功能通过及时获取最新的漏洞预警和相关补丁，并通过云端下发补丁更新，实现漏洞快速发现、快速修复的功能。云安全中心Web-CMS 漏洞功能可以帮助您解决漏洞发现不及时、不会修复漏洞、无法批量进行补丁更新等诸多问题。
 
-**说明：** 态势感知**基础版**只提供Web-CMS漏洞检测，不提供漏洞修复的服务；如需一键修复漏洞，请开通态势感知**企业版**。基础版和企业版详细功能介绍参见[功能特性](../../../../../intl.zh-CN/产品简介/功能特性.md#)。
+**说明：** 云安全中心**基础版**只提供Web-CMS漏洞检测，不提供漏洞修复的服务；如需一键修复漏洞，请开通云安全中心**高级版**或**企业版**。基础版、高级版和企业版详细功能介绍参见[功能特性](../../../../../intl.zh-CN/产品简介/功能特性.md#)。
 
 **说明：** Web-CMS漏洞修复后立即生效，无需再次验证。
 
 ## 操作步骤 {#section_lst_wsc_ygb .section}
 
-1.  登录阿里云[态势感知控制台](https://yundun.console.aliyun.com/?p=sas)。
-2.  登录[阿里云态势感知控制台](http://partners-intl.console.aliyun.com/#/sas)。
-3.  定位到**漏洞管理** \> **Web-CMS漏洞**。
+1.  登录[云安全中心控制台](https://yundun.console.aliyun.com/?p=sas)。
+2.  定位到**漏洞管理** \> **Web-CMS漏洞**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13639/155176737839865_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13639/155322263239865_zh-CN.png)
 
-4.  您可以在Web-CMS漏洞页面查看态势感知检测到的所有Web-CMS漏洞、修复漏洞、根据漏洞的严重程度和状态对特定漏洞进行定位、将漏洞加入白名单或忽略漏洞。
+3.  您可以在Web-CMS漏洞页面查看云安全中心检测到的所有Web-CMS漏洞、修复漏洞、根据漏洞的严重程度和状态对特定漏洞进行定位、将漏洞加入白名单或忽略漏洞。
     -   **查看漏洞详情**
 
         单击漏洞列表中的Web-CMS漏洞名称打开漏洞详情页面。您可在漏洞详情页面查看该漏洞关联的所有漏洞、漏洞的描述、漏洞紧急程度、漏洞影响的所有资产信息、漏洞的状态等信息，并可对漏洞执行修复或忽略的操作。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13639/155176737839899_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13639/155322263239899_zh-CN.png)
 
         漏洞详情页面可展示该漏洞所有**关联漏洞**，即该漏洞影响的所有资产信息，方便您对所有相关的漏洞进行分析和批量处理。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13639/155176737839900_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13639/155322263239900_zh-CN.png)
 
-        在漏洞详情页面的漏洞列表中单击漏洞影响的**资产名称**可定位到**资产列表** \> **漏洞信息**页面，为您展示该资产所有关联Web-CMS漏洞的信息。![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13639/155176737839908_zh-CN.png)
+        在漏洞详情页面的漏洞列表中单击漏洞影响的**资产名称**可定位到**资产列表** \> **漏洞信息**页面，为您展示该资产所有关联Web-CMS漏洞的信息。![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13639/155322263239908_zh-CN.png)
 
     -   **查看漏洞的修复紧急度建议**
 
         Web-CMS类型漏洞已经过工程师确认可导致严重危害，因此所有检查出的Web-CMS漏洞修复紧急度都为**高**，并用红色图标表示。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13639/155176737839911_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13639/155322263239911_zh-CN.png)
 
         **说明：** Web-CMS类型漏洞建议尽快修复。
 
@@ -41,7 +40,7 @@ Web-CMS 漏洞功能通过及时获取最新的漏洞预警和相关补丁，并
 
         您可在Web-CMS漏洞页面通过筛选漏洞危险等级（高、中、低）、漏洞处理状态（已处理、未处理）或输入漏洞名称定位到相关的漏洞。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13639/155176737839904_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13639/155322263239904_zh-CN.png)
 
         **说明：** 搜索漏洞名称支持模糊查询。
 
@@ -51,7 +50,7 @@ Web-CMS 漏洞功能通过及时获取最新的漏洞预警和相关补丁，并
 
             -   修复成功：漏洞已执行一键修复并修复成功。
             -   修复失败：漏洞修复失败，可能因为漏洞文件已被修改或漏洞文件已不存在。
-            -   已忽略：漏洞已执行**忽略**的操作，态势感知将不再对该漏洞进行告警。
+            -   已忽略：漏洞已执行**忽略**的操作，云安全中心将不再对该漏洞进行告警。
             -   漏洞已失效：表示该漏洞在7天内未被再次扫描到。
             -   回滚失败：漏洞回滚失败、无法回到未处理状态，可能因为漏洞文件已不存在。
             **说明：** **已处理**的漏洞支持**回滚**操作，漏洞回滚后将重新变为**未处理**的状态。
@@ -64,34 +63,34 @@ Web-CMS 漏洞功能通过及时获取最新的漏洞预警和相关补丁，并
 
     -   **忽略漏洞**
 
-        您可在Web-CMS漏洞页面勾选漏洞列表左侧的复选框后单击**忽略**，态势感知将不再提示该漏洞。
+        您可在Web-CMS漏洞页面勾选漏洞列表左侧的复选框后单击**忽略**，云安全中心将不再提示该漏洞。
 
-        **说明：** 被**忽略**的漏洞状态将转为**已处理**。如需态势感知继续对该漏洞进行告警提示，可在**已处理**的漏洞列表中找到该漏洞并对其**取消忽略**。
+        **说明：** 被**忽略**的漏洞状态将转为**已处理**。如需云安全中心继续对该漏洞进行告警提示，可在**已处理**的漏洞列表中找到该漏洞并对其**取消忽略**。
 
     -   **回滚漏洞**
 
-        态势感知支持对**已处理**的漏洞进行回滚操作，漏洞回滚后将重新变为**未处理**的状态。
+        云安全中心支持对**已处理**的漏洞进行回滚操作，漏洞回滚后将重新变为**未处理**的状态。
 
     -   **将漏洞加入白名单**
 
         您可在Web-CMS漏洞页面勾选漏洞列表左侧的复选框后单击**加入白名单**，将该漏洞加入白名单中。加入白名单后，态势感知将不再对白名单中的漏洞进行告警。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13639/155176737839905_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13639/155322263339905_zh-CN.png)
 
-        加入白名单的漏洞将从漏洞列表中移除，并记录在[漏洞管理设置](intl.zh-CN/用户指南/漏洞管理/漏洞管理设置.md#)页面的**漏洞白名单配置**列表中。
+        加入白名单的漏洞将从漏洞列表中移除，并记录在[漏洞管理设置](intl.zh-CN/用户指南/漏洞管理/漏洞管理设置与加白名单.md#)页面的**漏洞白名单配置**列表中。
 
-        如需恢复态势感知对白名单中的漏洞进行检测和告警提示，可在漏洞管理设置页面**移除**该漏洞。
+        如需恢复云安全中心对白名单中的漏洞进行检测和告警提示，可在漏洞管理设置页面**移除**该漏洞。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13639/155176737839906_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13639/155322263339906_zh-CN.png)
 
     -   **导出漏洞**
 
-        您可在Web-CMS漏洞页面单击**导出**将态势感知检测到的所有Windows系统漏洞统一导出并保存到本地。导出的文件为Excel格式。
+        您可在Web-CMS漏洞页面单击**导出**将云安全中心检测到的所有Windows系统漏洞统一导出并保存到本地。导出的文件为Excel格式。
 
         **说明：** 根据您资产中漏洞数据的大小，导出漏洞列表可能需要耗费一定时间，请耐心等待。
 
-    -   您可在漏洞详情页面单击![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/155176737839821_zh-CN.png)按钮保存筛选出的所有漏洞为一个漏洞修复批次，方便您对该批次漏洞的状态进行持续跟踪。
+    -   您可在漏洞详情页面单击![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/155322263339821_zh-CN.png)按钮保存筛选出的所有漏洞为一个漏洞修复批次，方便您对该批次漏洞的状态进行持续跟踪。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13639/155176737839907_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13639/155322263339907_zh-CN.png)
 
 
