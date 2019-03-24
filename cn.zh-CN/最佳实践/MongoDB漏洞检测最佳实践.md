@@ -9,14 +9,14 @@
 
 ## 操作步骤 { .section}
 
-1.  登录[云安全中心控制台](https://yundun.console.aliyun.com/?p=sas)
+1.  登录[云安全中心控制台](https://yundun.console.aliyun.com/?p=sas)。
 2.  定位到 **漏洞管理** \> **应急漏洞** 。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118680/155340421339938_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118680/155340455339938_zh-CN.png)
 
 3.  单击应急漏洞页面右侧的**立即检测**，开始检测漏洞。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118680/155340421339960_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118680/155340455339960_zh-CN.png)
 
     触发检测功能后检测引擎开始工作，该漏洞状态会转为**检测中**。需要等待一段时间才可完成漏洞检测，请您耐心等待。
 
