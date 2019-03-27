@@ -1,6 +1,6 @@
 # View and handle security events {#concept_rlc_rts_sfb .concept}
 
-You can view and handle security events in TDS. You can also click on security events to see the relevant threats or intrusions. TDS allows you to handle multiple events at a time.
+You can view and handle security events in TDS console. TDS allows you to handle multiple events at a time.
 
 ## Procedure {#section_wxs_bsj_zdb .section}
 
@@ -12,7 +12,7 @@ You can view and handle security events in TDS. You can also click on security e
 
 4.  You can handle different events with the following operations.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/61174/155367088633907_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/61174/155367182933907_en-US.png)
 
     -   **Quarantine**: Quarantine only the **Webshell** and **Malicious Process** events. You can click Quarantine in the **Actions** column corresponding to a Webshell event to quarantine the relevant webshell file. Quarantined files no longer pose threats to the host.
 
