@@ -12,7 +12,7 @@ You can view and handle security events in TDS console. TDS allows you to handle
 
 4.  You can handle different events with the following operations.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/61174/155367182933907_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/61174/155367226033907_en-US.png)
 
     -   **Quarantine**: Quarantine only the **Webshell** and **Malicious Process** events. You can click Quarantine in the **Actions** column corresponding to a Webshell event to quarantine the relevant webshell file. Quarantined files no longer pose threats to the host.
 
