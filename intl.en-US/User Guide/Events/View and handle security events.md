@@ -10,18 +10,15 @@ You can view and handle security events in TDS. You can also click on security e
 
     You can find a certain event based on specified search conditions. For example, you can search for events by event or asset name, severity level, event status, or event type.
 
-4.  You can use different methods to handle different events as required.
+4.  You can handle different events with the following operations.
 
-    ![](images/33907_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/61174/155367074133907_en-US.png)
 
     -   **Quarantine**: Quarantine only the **Webshell** and **Malicious Process** events. You can click Quarantine in the **Actions** column corresponding to a Webshell event to quarantine the relevant webshell file. Quarantined files no longer pose threats to the host.
 
         **Note:** The system keeps a quarantined file for only 30 days. You can restore any quarantined file before the system deletes the file.
 
     -   **Handle Offline**: After handling an event offline, you can click **Handle Offline** in the **Actions** column. The event status then changes to **Handled**.
-
-        ![](images/35082_en-US.png)
-
     -   **Ignore Once**: You can click **More** in the **Actions** column corresponding to an event and choose **Ignore Once** from the shortcut menu to ignore the event. The event status then changes to **Handled**. The event will no longer be reported in TDS console.
     -   **Label as False Positive**: You can click **More** in the **Actions** column corresponding to an event and choose **Label as False Positive** from the shortcut menu to label the event as a false positive. The event status then changes to **Handled**. The event will no longer be reported in TDS console. You can find the event that you labeled as a false positive in the **Handled** event list, and click **Cancel Labeling as False Positive** in the **Actions** column to unlabel the event.
 
@@ -31,8 +28,6 @@ You can view and handle security events in TDS. You can also click on security e
 ## Handle security events in batches {#section_tdf_q2n_bgb .section}
 
 You can use the batch-handling toolbar in the lower-left corner of the **Events** page to handle security events in batches.
-
-![](images/33908_en-US.png)
 
 **Note:** Check the details of each event before you handle the events in batches.
 
