@@ -12,13 +12,15 @@ You can view and handle security events in TDS console. TDS allows you to handle
 
 4.  You can handle different events with the following operations.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/61174/155367226033907_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/61174/155367348733907_en-US.png)
 
     -   **Quarantine**: Quarantine only the **Webshell** and **Malicious Process** events. You can click Quarantine in the **Actions** column corresponding to a Webshell event to quarantine the relevant webshell file. Quarantined files no longer pose threats to the host.
 
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/61174/155367348730927_en-US.png)
+
         **Note:** The system keeps a quarantined file for only 30 days. You can restore any quarantined file before the system deletes the file.
 
-    -   **Handle Offline**: After handling an event offline, you can click **Handle Offline** in the **Actions** column. The event status then changes to **Handled**.
+    -   **Handle Offline**: After handling an event offline, you can click **Handle Offline** in the **Actions** column. The event status then changes to **Handled**. ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/61174/155367348735082_en-US.png) 
     -   **Ignore Once**: You can click **More** in the **Actions** column corresponding to an event and choose **Ignore Once** from the shortcut menu to ignore the event. The event status then changes to **Handled**. The event will no longer be reported in TDS console.
     -   **Label as False Positive**: You can click **More** in the **Actions** column corresponding to an event and choose **Label as False Positive** from the shortcut menu to label the event as a false positive. The event status then changes to **Handled**. The event will no longer be reported in TDS console. You can find the event that you labeled as a false positive in the **Handled** event list, and click **Cancel Labeling as False Positive** in the **Actions** column to unlabel the event.
 
@@ -28,6 +30,8 @@ You can view and handle security events in TDS console. TDS allows you to handle
 ## Handle security events in batches {#section_tdf_q2n_bgb .section}
 
 You can use the batch-handling toolbar in the lower-left corner of the **Events** page to handle security events in batches.
+
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/61174/155367348733908_en-US.png)
 
 **Note:** Check the details of each event before you handle the events in batches.
 
