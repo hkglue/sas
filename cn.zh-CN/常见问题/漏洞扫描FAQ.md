@@ -13,7 +13,7 @@
 -   [为什么漏洞修复后手动验证没有反应？](#)
 -   [为什么单击生成修复命令后，生成的修复命令为空？](#)
 -   [为什么进行漏洞回滚操作会失败？](#)
--   
+
 ## 漏洞扫描会扫描系统层面和应用层面的漏洞吗？ {#section_fxb_32c_zdb .section}
 
 是的，漏洞扫描会扫描系统漏洞（主机上系统层级漏洞）和Web漏洞（应用层漏洞）。
@@ -58,7 +58,7 @@
 
 -   **在云安全中心中查看当前软件漏洞信息**
 
-    您可以登录[云安全中心控制台](https://yundun.console.aliyun.com/?p=sas)，并前往**漏洞管理** \> **主机漏洞**页面，查看云安全中心在您的服务器上检测到的系统软件漏洞信息。关于云安全中心对系统软件漏洞的各项参数说明，请参考[系inux统软件漏洞参数说明](../../../../../intl.zh-CN/用户指南/漏洞管理/Linux软件漏洞.md#)。
+    您可以登录[云安全中心控制台](https://yundun.console.aliyun.com/?p=sas)，并前往**漏洞管理** \> **主机漏洞**页面，查看云安全中心在您的服务器上检测到的系统软件漏洞信息。关于云安全中心对系统软件漏洞的各项参数说明，请参考[Linux软件漏洞参数说明](../../../../../intl.zh-CN/用户指南/漏洞管理/Linux软件漏洞.md#)。
 
 -   **在您的服务器上查看当前软件版本信息**
 
@@ -85,7 +85,7 @@
 
 1.  执行`uname -av`命令，确认当前服务器的系统内核版本是否为3.1\*。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13674/15532244028522_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13674/15538270688522_zh-CN.png)
 
 2.  执行以下命令，查看是否已有最新的内核Kernel更新包。
 
@@ -100,11 +100,11 @@
 5.  服务器重启后，执行以下命令验证内核升级是否成功。
     -   执行`uname -av`命令查看当前调用内核。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13674/15532244028523_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13674/15538270698523_zh-CN.png)
 
     -   执行`dpkg -l | grep linux-image`命令查看当前内核包情况。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13674/15532244028524_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13674/15538270718524_zh-CN.png)
 
 
 ## 为什么内核漏洞升级修复后，云安全中心仍然提示存在漏洞？ {#section_rpg_f25_q2b .section}
