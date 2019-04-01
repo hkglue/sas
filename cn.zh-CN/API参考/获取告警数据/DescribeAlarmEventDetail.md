@@ -1,4 +1,4 @@
-# DescribeAlarmEventDetail {#doc_api_1058003 .reference}
+# DescribeAlarmEventDetail {#doc_api_1164133 .reference}
 
 获取告警事件的详细信息。
 
