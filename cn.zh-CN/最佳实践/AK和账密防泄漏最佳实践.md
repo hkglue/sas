@@ -1,12 +1,12 @@
 # AK和账密防泄漏最佳实践 {#concept_188635 .concept}
 
-API调用的方式可以实现用户的自动化编译需求。调用API时的通信加密和身份认证会使用基于非对称密钥算法的鉴权密钥对（即API凭证）。API凭证是云上用户调用云服务API、访问云上资源的唯一身份凭证。
+API凭证（即阿里云AccessKey）是用户访问内部资源最重要的身份凭证。用户调用API时的通信加密和身份认证会使用API凭证（即基于非对称密钥算法的鉴权密钥对）。API凭证是云上用户调用云服务API、访问云上资源的唯一身份凭证。
 
-API凭证（即阿里云AccessKey）是用户访问内部资源最重要的身份凭证。API凭证相当于登录密码，只是使用场景不同。前者用于程序方式调用云服务API，而后者用于登录控制台。
+API凭证相当于登录密码，只是使用场景不同。前者用于程序方式调用云服务API，而后者用于登录控制台。
 
 在阿里云，用户可以使用AccessKey构造一个API请求（或者使用云服务SDK）来操作资源。AccessKey包括AccessKeyId和AccessKeySecret。其中AccessKeyId用于标识用户，AccessKeySecret是用来验证用户身份合法性的密钥。AccessKeySecret必须保密。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/162630/155731538045369_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/162630/155731574745369_zh-CN.png)
 
 **说明：** API凭证泄露会导致数据泄露，从而给用户带来严重的损失。
 
@@ -14,11 +14,11 @@ API凭证（即阿里云AccessKey）是用户访问内部资源最重要的身�
 
 云安全中心为了应对用户不慎泄漏AccessKey造成恶劣影响，设计了全方位检测理念，从泄漏前配置检查——泄漏行为检测——黑客异常调用三点完成检测闭环，为用户的云上业务安全保驾护航。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/162630/155731538045378_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/162630/155731574745378_zh-CN.png)
 
 阿里云已率先和最大的开源代码托管服务商Github合作，引入Token scan机制。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/162630/155731538045374_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/162630/155731574745374_zh-CN.png)
 
 云安全中心AK检测流程完全自动化，可以对在Github上泄漏的AccessKey进行高效和精准地检测。在实际场景中，阿里云已实现含有AccessKey的代码提交到Github后数秒之内，就可以通知用户并且做出响应，尽可能减少对用户产生的负面影响。
 
@@ -26,7 +26,7 @@ API凭证（即阿里云AccessKey）是用户访问内部资源最重要的身�
 
     在云产品的过程中为了防患于未然，您也可以在您可在云安全中心控制台**云安全最佳实践检查**模块检查您当前云产品的配置项是否存在安全风险。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/162630/155731538045376_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/162630/155731574845376_zh-CN.png)
 
     -   确保云产品的操作审计日志处于**开启**状态，可以帮助您分析是否有异常的调用行为。
     -   确保使用RAM用户的AK、而不是主账号AK，并且遵守最小权限原则。这样AK发生泄漏问题不至于失去整个云账号的控制权限。
@@ -35,7 +35,7 @@ API凭证（即阿里云AccessKey）是用户访问内部资源最重要的身�
 
     您可在云安全中心控制台**AK&账密泄露检测**模块查看AK泄漏的详情。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/162630/155731538046799_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/162630/155731574846799_zh-CN.png)
 
 -   **黑客异常调用检测**-**安全告警处理** \> **云产品威胁检测** 
 
