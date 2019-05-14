@@ -20,11 +20,11 @@ Details on how to purchase Security Center, refer to [Purchase Security Center](
 
 ## Fee for Server protection \(without value-added functions {#section_mby_duk_9oe .section}
 
-|Version of Security Center|Price of protecting one server for validity period \(USD/Server/month\)|
-|--------------------------|-----------------------------------------------------------------------|
+|Version of Security Center|Price of protecting one server for validity period|
+|--------------------------|--------------------------------------------------|
 |Basic|Free of charge|
-|Advanced|9.5|
-|Enterprise|23.5|
+|Advanced|9.5 USD/Server/month|
+|Enterprise|23.5 USD/Server/month|
 
 ## Fee for Value-added functions {#section_4qb_f7l_4gx .section}
 
@@ -32,6 +32,6 @@ Value-added functions are available for **Advanced** and **Enterprise** editions
 
 |Value-added functions|Price|
 |---------------------|-----|
-|Web Guard|142.6 USD /Sever/month|
+|Web Guard|142.6 USD/Sever/month|
 |Log Analysis|72.9 USD/T/month|
 
