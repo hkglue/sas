@@ -5,7 +5,7 @@ Security Center is available in Basic edition and Enterprise Editio.:
 -   **Basic** Edition: Detects unusual logon and server vulnerabilities. Basic Edition is available for free.
 -   **Enterprise** Edition: Provides comprehensive security services, including security events, server vulnerability detection and resolution, baseline check, asset fingerprints, and log retrieval. Enterprise Edition is charged by annual and monthly subscription.
 
-## Feature comparison between Basic/Advanced/Enterprise Edition {#section_gmh_xvb_zdb .section}
+## Feature comparison among Basic/Advanced/Enterprise Edition {#section_gmh_xvb_zdb .section}
 
 The following table compares the features provided by Basic Edition, Advanced Edition and Enterprise Edition of Security Center:
 
