@@ -87,5 +87,6 @@ The following table compares the features provided by Basic Edition, Advanced Ed
 
  |X|X|√|
 |Log analysis|Overall log analysis|Security Center provides real-time log search and analysis, which covers all types of logs for Cloud Security Center, such as starting of server process, outgoing network connection, system logon, DNS request, etc.|X|Value-added|Value-added|
+|Web Guard|Web Guard|Web Guards adopts the advanced web tempering protection technology, monitors the protected directories, prevents your website providing illegally tempered information, and backup and restore the website files.|X|Value-added|Value-added|
 |Alert correlation analysis|Alert correlation analysis|Alert correlation rules automatically group the related events together and then generate a related alert. It can help you see all the related alerts on one page, and provide you with centralized management on the alerts and related events.|X|X|√|
 
