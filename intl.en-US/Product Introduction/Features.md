@@ -86,19 +86,6 @@ The following table compares the features provided by Basic Edition, Advanced Ed
  Website background: Recognizes website back-end assets, and detects user enumeration attempts and unusual background logons.
 
  |X|X|√|
-|Log retrieval|Log retrieval|Server logs -   Logon: Searches logs of SSH and RDP logon processes.
--   Brute-force cracking: Searches logs of consecutive logon failures from SSH and RDP logon processes.
--   Port listening snapshot: Takes and stores a snapshot of all listening ports at a specified time, and supports searching port listening snapshots.
--   Account snapshot: Takes and stores a snapshot of all accounts at a specified time, and supports searching snapshots of accounts.
--   Process snapshots: Takes and stores a snapshot of all processes that are running at a specified time, and can be used to search process snapshots.
--   Process initiation: Records the details of process initiation, and supports searching process initiation logs.
--   Network connection logs: Searches records of network connections that have been initiated by an instance.
-
- Network logs -   Web session logs: Collects 5-tuples for Web sessions between instances and networks, and supports searching Web session content.
--   Web access logs: Captures HTTP access logs of a website, and supports searching web access logs. This feature currently does not support HTTPS access logs.
--   DNS logs: Searches outbound Domain Name System \(DNS\) request logs. This feature currently does not support private DNS servers.
-
- |X|Value-added|Value-added|
 |Log analysis|Overall log analysis|Security Center provides real-time log search and analysis, which covers all types of logs for Cloud Security Center, such as starting of server process, outgoing network connection, system logon, DNS request, etc.|X|Value-added|Value-added|
 |Alert correlation analysis|Alert correlation analysis|Alert correlation rules automatically group the related events together and then generate a related alert. It can help you see all the related alerts on one page, and provide you with centralized management on the alerts and related events.|X|X|√|
 
