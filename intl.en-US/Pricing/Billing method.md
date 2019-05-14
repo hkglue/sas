@@ -35,3 +35,5 @@ Value-added functions are available for **Advanced** and **Enterprise** editions
 |Web Guard|142.6 USD/Sever/month|
 |Log Analysis|72.9 USD/T/month|
 
+Details on how to purchase Security Center, refer to [Purchase Security Center](https://www.alibabacloud.com/help/doc-detail/42308.htm).
+
