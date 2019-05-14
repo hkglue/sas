@@ -16,8 +16,6 @@ Bill= \(Number of billable assets \* Price of protecting one server for validity
 
 **Note:** Security Center also protects assets such as SLB and NAT gateways. However, Security Center only charges for protecting your ECS instances and external servers. All other assets are currently protected free of charge.
 
-Details on how to purchase Security Center, refer to [Purchase Security Center](https://www.alibabacloud.com/help/doc-detail/42308.htm).
-
 ## Fee for Server protection \(without value-added functions\) {#section_mby_duk_9oe .section}
 
 |Version of Security Center|Price of protecting one server for validity period|
