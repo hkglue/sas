@@ -1,6 +1,6 @@
 # Billing method {#concept_z2v_2bc_zdb .concept}
 
-Security Center **Advanced** and **Enterprise** Edition are billed by month or annual Subscription.
+Security Center **Advanced** and **Enterprise** Edition are billed by month or annual subscription.
 
 ## Billing period {#section_hbn_fbc_zdb .section}
 
