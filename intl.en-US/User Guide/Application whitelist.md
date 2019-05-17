@@ -25,7 +25,7 @@ The application whitelist feature is in the trial phase. You can log on to Secur
 
 After the whitelist policy is created, its details are automatically displayed in the policy list on the **Policies** tab.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/161240/155792861845356_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/161240/155807307545356_en-US.png)
 
 The policy list contains the following information about the policy:
 
@@ -34,7 +34,7 @@ The policy list contains the following information about the policy:
 
     Click the number in the **Servers** column corresponding to the policy. In the pane that appears on the right, you can select servers from the server list and click **Add Server** to add the selected servers to the policy.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/161240/155792861845363_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/161240/155807307545363_en-US.png)
 
 -   **Status**: the policy status. Valid values:
     -   **Applied**: Intelligent learning is complete. The policy has been applied to the servers.
@@ -42,25 +42,25 @@ The policy list contains the following information about the policy:
 
         After intelligent learning is complete, Security Center automatically identifies the programs on the corresponding servers as trusted, suspicious, or malicious. To enable the policy, click **Apply**. The policy takes effect only after it is enabled.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/161240/155792861845364_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/161240/155807307545364_en-US.png)
 
     -   **Paused**: Intelligent learning has been manually paused. You can click **Continue** to resume intelligent learning.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/161240/155792861947357_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/161240/155807307547357_en-US.png)
 
     -   **Learning**: Intelligent learning is in progress.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/161240/155792861945365_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/161240/155807307545365_en-US.png)
 
         After a whitelist policy is created, Cloud Security Center performs intelligent learning to learn the policy. The status of each newly created policy is **Learning**.
 
 -   **Applications**: the numbers of programs, including **Trusted**, **Suspicious**, and **Malicious** programs, on all servers to which the policy is applied.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/161240/155792861947358_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/161240/155807307547358_en-US.png)
 
 -   **Actions**: the actions that can be taken on the policy.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/161240/155792861947359_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/161240/155807307547359_en-US.png)
 
     -   **Apply**: Click **Apply** to add or remove servers to which the policy is applied in the **Apply Whitelist Policy** pane.
     -   **Confirm**: Click **Confirm** to view the program list of the policy. In the pane that appears on the right, confirm the identified programs and their risks and enable the policy. The policy takes effect on the servers only after it is enabled.
@@ -70,7 +70,7 @@ The policy list contains the following information about the policy:
 
         After you click **Continue**, the status of the policy changes to **Learning**. You can view the learning progress of the policy in the **Status** column.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/161240/155792861945365_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/161240/155807307545365_en-US.png)
 
     -   **Delete**: Click Delete to delete the policy.
 
@@ -86,14 +86,14 @@ Before applying the whitelist policy to servers, you must purchase a sufficient 
 3.  On the Servers tab, click **Add Server**.
 4.  In the Add Server pane, set the following parameters:
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/161240/155792861945319_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/161240/155807307545319_en-US.png)
 
     -   **Whitelist Policy**: Select the whitelist policy you created from the drop-down list.
     -   **Event Handling**: indicates how Security Center handles suspicious events. The default value is **Alert**, which indicates that Security Center generates an alert when detecting a suspicious program.
 
         When a non-whitelisted program starts on a server protected by the whitelist, an alert is automatically triggered. You can click the number of alerts in the **Suspicious Events** column corresponding to a server. On the **Assets** \> **Events** page that appears, you can view the alert details.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/161240/155792861947360_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/161240/155807307647360_en-US.png)
 
     -   **Servers**: Select the servers to add to the whitelist. You can select multiple servers.
 
@@ -103,7 +103,7 @@ Before applying the whitelist policy to servers, you must purchase a sufficient 
 
 After the application whitelist is created, you can view the protected servers and the name of the whitelist policy applied to the servers in the server list on the Servers tab.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/161240/155792861947361_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/161240/155807307647361_en-US.png)
 
 The following information about each protected server is available on the Servers tab:
 
@@ -123,13 +123,13 @@ The following information about each protected server is available on the Server
 
 After you create an application whitelist, you can view the protected servers and the name of the whitelist policy applied to the servers in the server list on the Servers tab. You can click the policy name in the **Whitelist Policy** column corresponding to a server. The list of programs running on the server is displayed. View the trusted, suspicious, and malicious programs that have been detected and their details.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/161240/155792861947362_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/161240/155807307647362_en-US.png)
 
 The following information about each program on the server is available in the program list:
 
 -   **Type**: the type of the program. Programs are classified into trusted, suspicious, and malicious programs.
 -   **Process Name**: the name of the program.
--   **hash**: the hash function of the program. The hash function is used to ensure that the program is unique and has not been forged.
+-   **hash**: the hash function of the program. The hash function is used to ensure that the program has not been forged.
 -   **Path**: the file path of the program on the server.
 -   **Degree of Trustability**: the degree of trustability for the program determined by the Cloud Security Center. Valid values: 0%, 60%, and 100%. 0% indicates that the program is malicious. 60% indicates that the program is suspicious. 100% indicates that the program is trusted.
 
