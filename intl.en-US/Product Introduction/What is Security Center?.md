@@ -1,6 +1,6 @@
 # What is Security Center? {#concept_bjv_y5w_ydb .concept}
 
-Alibaba Cloud Security offers Security Center to secure and monitor diagnostics services. Security Center supports multiple features, including security event detection, vulnerability scanning, and configuration baseline check. You can use Security Center to secure and manage your assets on the cloud. With the integration of Alibaba's independently developed big data and machine learning algorithm, Security Center can help you check and process all the security threats in real time.
+Alibaba Security offers Security Center \(original name: Threat Detection Service\) to secure and monitor diagnostics services. Security Center supports multiple features, including security event detection, vulnerability scanning, and configuration baseline check. You can use Security Center to secure and manage your assets on the cloud. With the integration of Alibaba's independently developed big data and machine learning algorithm, Security Center can help you check and process all the security threats in real time.
 
 Security Center also enables you to analyze the security situation and detect potential threats by collecting and auditing up to 10 types of security logs, your asset fingerprints, and network threat intelligence.
 
