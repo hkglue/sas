@@ -1,6 +1,6 @@
 # How to use Alibaba Cloud security products to build a safe website {#concept_rfh_ldb_ygb .concept}
 
-This article describes how to build a safe website with Alibaba Cloud security products DDoS Protection, Web Application Firewall \(WAF\) and Thread Detection Service.
+This article describes how to build a safe website with Alibaba Cloud security products DDoS Protection, Web Application Firewall \(WAF\) and Security Center.
 
 ## DDoS Protection {#section_nsb_ckb_ygb .section}
 
@@ -10,9 +10,9 @@ DDoS Protection is a service that features a set of high-defensive IPs, and acts
 
 [Alibaba Cloud WAF](https://www.alibabacloud.com/help/doc-detail/28517.htm) helps you to defend against common web attacks such as SQL injections, Cross-site scripting \(XSS\), web shell, Trojan, and unauthorized access, and to filter out massive HTTP flood requests. It protects your web resources from being exposed and guarantees your website security and availability.
 
-## Thread Detection Service {#section_upx_3kb_ygb .section}
+## Security Center {#section_upx_3kb_ygb .section}
 
-Thread Detection Service \(TDS\) is a security service with security event detection, vulnerability scanning, and configuration baseline check.
+Security Center service with security event detection, vulnerability scanning, and configuration baseline check.
 
 ## Limitations of use DDoS Protection and Web Application Firewall in China {#section_tsy_mkb_ygb .section}
 
@@ -29,7 +29,7 @@ Before you begin, make sure of the following:
 
 The following figure illustrates the best practice to build up a safe website:
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/133907/155367846339794_en-US.jpg)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/133907/156032216039794_en-US.jpg)
 
 In order to improve user experience in Mainland China. Alibaba Cloud recommend you to duplicate your website resources in China Region to guarantee performance is not impacted by GFW. You can also use Alibaba Cloud DNS to ensure all DNS queries are rapidly responded to by the server in closest geographic proximity. For more information, see [Alibaba Cloud DNS](https://www.alibabacloud.com/help/doc-detail/58165.htm).
 
@@ -73,9 +73,9 @@ In order to improve user experience in Mainland China. Alibaba Cloud recommend y
 
 4. Enable and configure DDoS Protection.
 
-5. Enable TDS and install the Agent.
+5. Enable Security Center and install the Agent.
 
-6. Configure TDS Baseline check and vulnerability scanning.
+6. Configure Security Center Baseline check and vulnerability scanning.
 
 Below are listed of supported check items and recommended setting:
 
@@ -103,5 +103,5 @@ Below are listed of supported check items and recommended setting:
  |Depends on the operating system you are running. Select **Linux Weak Password** or **Windows Account Weak Password**. If you are running additional services in ECS. Select the according weak password baseline checking.|
 |Middleware Baseline| -   Apache Tomcat 7 Security Baseline
 
- |Currently Alibaba Cloud Cloud Security Center only support Tomcat 7 security baseline checking. If you are running Tomcat 7 in ECS. Select Apache Tomcat 7 Security Baseline checking.|
+ |Currently Alibaba Security Center only support Tomcat 7 security baseline checking. If you are running Tomcat 7 in ECS. Select Apache Tomcat 7 Security Baseline checking.|
 
