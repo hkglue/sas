@@ -1,21 +1,21 @@
 # Cloud Threat Detection {#concept_jss_bqy_y2b .concept}
 
-Cloud Threat Detection of TDS integrates the features of popular antivirus engines, and provides you with comprehensive and real-time virus detection and protection service. This service features a unique detection model, which is based on machine learning and deep learning techniques, and large amount of threat information gathered by Alibaba Cloud.
+Cloud Threat Detection of Security Center integrates the features of popular antivirus engines, and provides you with comprehensive and real-time virus detection and protection service. This service features a unique detection model, which is based on machine learning and deep learning techniques, and large amount of threat information gathered by Alibaba Cloud.
 
 Cloud Threat Detection checks hundreds of millions of files every day and serves millions of cloud servers.
 
 ## Detection capabilities of Cloud Threat Detection {#section_r4m_rqy_y2b .section}
 
-TDS collects the process information on servers and upload it onto cloud for viruses detection. If a malicious process has been detected, you can directly stop the process and quarantine the related files.
+Security Center collects the process information on servers and upload it onto cloud for viruses detection. If a malicious process has been detected, you can directly stop the process and quarantine the related files.
 
 -   **Virus detection engine \(self-developed by Alibaba\)** is built on deep learning techniques and a large amount of attack samples and protection policies. The engine specializes in detecting malicious files in the cloud, can effectively identify potential threats, and cover the shortages of traditional antivirus engines.
 -   **Cloud sandbox \(self-developed by Alibaba\)** simulates cloud environments and allow you to monitor attacks from malicious samples. Based on big data analysis and machine learning modeling techniques, cloud sandbox automatically checks and detects potential threats and offers dynamic analysis and detection capabilities.
 -   **Integration with antivirus engines popular in the world** enables the service to timely update the virus database.
--   Based on the **threat data provided by TDS**, the service also integrates a server detection model to detect suspicious processes and malicious activities from various perspectives.
+-   Based on the **threat data provided by Security Center**, the service also integrates a server detection model to detect suspicious processes and malicious activities from various perspectives.
 
 ## Supported virus types {#section_ntm_psy_y2b .section}
 
-Cloud Threat Detection provides a comprehensive solution based on the experience of Alibaba Cloud's security and defense experts. It covers data collection, masking, recognition, analysis, quarantine and recovery. You can quarantine malicious files and restore quarantined files on TDS console.
+Cloud Threat Detection provides a comprehensive solution based on the experience of Alibaba Cloud's security and defense experts. It covers data collection, masking, recognition, analysis, quarantine and recovery. You can quarantine malicious files and restore quarantined files on Security Center console.
 
 Cloud Threat Detection can detect the following virus types :
 
@@ -35,19 +35,19 @@ Cloud Threat Detection can detect the following virus types :
 -   **Reliable**: Based on big data, deep learning, and machine learning techniques, the service integrates the capabilities of multiple detection engines to provide a comprehensive and real-time virus detection service.
 -   **Lightweight**: The service only takes 1% CPU usage and 50 MB memory.
 -   **Real-time**: The service obtains process initiation logs and monitors malicious programs in real time.
--   **Easy management**: You can manage all servers and view their real-time status in the Alibaba Cloud Security console.
+-   **Easy management**: You can manage all servers and view their real-time status in the Security Center console.
 
 ## Scenarios {#section_wlx_kty_y2b .section}
 
-**Detect**
+**Virus Detection**
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/18946/155534329210818_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/18946/156030417710818_en-US.png)
 
-**Quarantine**
+**Virus Isolation**
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/18946/155534329210819_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/18946/156030417810819_en-US.png)
 
 **Recover**
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/18946/155534329310820_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/18946/156030417810820_en-US.png)
 
