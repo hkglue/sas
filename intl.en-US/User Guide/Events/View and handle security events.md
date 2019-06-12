@@ -1,10 +1,10 @@
 # View and handle security events {#concept_rlc_rts_sfb .concept}
 
-You can view and handle security events in TDS console. TDS allows you to handle multiple events at a time.
+You can view and handle security events in Security Center console. Security Center allows you to handle multiple events at a time.
 
 ## Procedure {#section_wxs_bsj_zdb .section}
 
-1.  Log on to [Threat Detection Service console](partners-intl.console.aliyun.com/#/sas).
+1.  Log on to [Security Center console](partners-intl.console.aliyun.com/#/sas).
 2.  In the left-side navigation pane, click **Events** to go to the **Events** page.
 3.  On the **Events** page, view or search for the detected intrusion or threat events, and check their details.
 
@@ -12,17 +12,17 @@ You can view and handle security events in TDS console. TDS allows you to handle
 
 4.  You can handle different events with the following operations.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/61174/155367348733907_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/61174/156030414633907_en-US.png)
 
     -   **Quarantine**: Quarantine only the **Webshell** and **Malicious Process** events. You can click Quarantine in the **Actions** column corresponding to a Webshell event to quarantine the relevant webshell file. Quarantined files no longer pose threats to the host.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/61174/155367348730927_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/61174/156030414730927_en-US.png)
 
         **Note:** The system keeps a quarantined file for only 30 days. You can restore any quarantined file before the system deletes the file.
 
-    -   **Handle Offline**: After handling an event offline, you can click **Handle Offline** in the **Actions** column. The event status then changes to **Handled**. ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/61174/155367348735082_en-US.png) 
-    -   **Ignore Once**: You can click **More** in the **Actions** column corresponding to an event and choose **Ignore Once** from the shortcut menu to ignore the event. The event status then changes to **Handled**. The event will no longer be reported in TDS console.
-    -   **Label as False Positive**: You can click **More** in the **Actions** column corresponding to an event and choose **Label as False Positive** from the shortcut menu to label the event as a false positive. The event status then changes to **Handled**. The event will no longer be reported in TDS console. You can find the event that you labeled as a false positive in the **Handled** event list, and click **Cancel Labeling as False Positive** in the **Actions** column to unlabel the event.
+    -   **Handle Offline**: After handling an event offline, you can click **Handle Offline** in the **Actions** column. The event status then changes to **Handled**. ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/61174/156030414735082_en-US.png)
+    -   **Ignore Once**: You can click **More** in the **Actions** column corresponding to an event and choose **Ignore Once** from the shortcut menu to ignore the event. The event status then changes to **Handled**. The event will no longer be reported in Security Center console.
+    -   **Label as False Positive**: You can click **More** in the **Actions** column corresponding to an event and choose **Label as False Positive** from the shortcut menu to label the event as a false positive. The event status then changes to **Handled**. The event will no longer be reported in Security Center console. You can find the event that you labeled as a false positive in the **Handled** event list, and click **Cancel Labeling as False Positive** in the **Actions** column to unlabel the event.
 
         **Note:** False positives are alerts generated for normal processes. The Unusual TCP Packets event is a common false positive. It is reported when a process on your server initiated a suspected scan on other devices.
 
@@ -31,7 +31,7 @@ You can view and handle security events in TDS console. TDS allows you to handle
 
 You can use the batch-handling toolbar in the lower-left corner of the **Events** page to handle security events in batches.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/61174/155367348733908_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/61174/156030414733908_en-US.png)
 
 **Note:** Check the details of each event before you handle the events in batches.
 
