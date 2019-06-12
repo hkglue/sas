@@ -4,7 +4,7 @@ As the security operation center of Alibaba Cloud, the **Overview** page of the 
 
 On the **Overview** page, you can view important security information of your assets and execute related operations.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15448/156030406537206_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15448/156031125537206_en-US.png)
 
 The **Overview** page includes the following modules:
 
@@ -12,11 +12,11 @@ The **Overview** page includes the following modules:
 
     **Basic Edition**：
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15448/156030406537208_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15448/156031125537208_en-US.png)
 
     **Enterprise Edition**：
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15448/156030406637207_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15448/156031125537207_en-US.png)
 
 -   **Safety score**: Safety score displays your assest's security score evaluated by Security Center, and the number of protected and unprotected assets. For specific score descriptions, see the Safety score table below.
 
@@ -34,11 +34,11 @@ Security Center provides a Basic Edition, Advanced and an Enterprise Edition. Yo
 
 -   **Basic Edition**: The edition of Security Center is shown in the upper-right corner of the page. An **Upgrade** button is also displayed. If you upgrade your Security Center Basic Edition to the Advanced or Enterprise Edition, you are able to use such advanced functions as baseline checks, asset fingerprints, malicious processes \(malware checking\), and log analysis \(needs to be purchased additionally\).
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15448/15603040666876_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15448/15603112566876_en-US.png)
 
 -   **Advanced/Enterprise Edition**: The expiration date of your Security Center service, and the size of your assets \(the number of servers\) are displayed in the upper-right corner of the page. A **Renew** button is also displayed.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15448/156030406637207_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15448/156031125537207_en-US.png)
 
     **Note:** If your current number of servers exceeds the number that you specified when purchasing Security Center, an **Asset Scaling** button is displayed in the upper-right corner of the page. To guarantee the availability of all features, we recommend that you scale up your assets.
 
@@ -75,5 +75,5 @@ The **Overview** page displays the statistics of the threats that Security Cente
 -   **Vulnerabilities**: Number of unhandled vulnerabilities.
 -   **Baseline check**: Number of vulnerable baseline configurations.
 
- ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15448/156030406637209_en-US.png)
+ ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15448/156031125637209_en-US.png)
 
