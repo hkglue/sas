@@ -15,7 +15,7 @@
 |Action|String|是|DescribeSuspEvents|系统规定参数。取值：DescribeSuspEvents。
 
  |
-|From|String|是|saas|请求来源标识，固定为sas。
+|From|String|是|sas|请求来源标识，固定为sas。
 
  |
 |AlarmUniqueInfo|String|否|8df914418f4211fbf756efe7a6f40cbc|告警事件的唯一标识。
