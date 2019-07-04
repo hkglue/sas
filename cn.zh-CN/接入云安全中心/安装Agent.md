@@ -6,7 +6,7 @@
 
 每台资产都需安装Agent插件，您可以在云安全中心控制台**总览**页面资产保护模块，查看未安装Agent插件（即**未保护资产**）的服务器数量。单击**安装Agent**跳转到**设置** \> **安装/卸载插件**页面。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13631/156016559748934_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13631/156223148048934_zh-CN.png)
 
 **说明：** 您也可以在**资产管理**页面确认服务器Agent安装状态。
 
@@ -15,7 +15,21 @@
 
 **安装/卸载插件**页面会展示出您所有**未安装Agent插件**（包含已关机的服务器）的服务器列表。您可在该页面对未安装Agent的服务器执行一键自动安装。一键安装功能无需您单独下载插件或手动执行任何命令安装Agent。该页面下方还会展示出对于不支持一键安装功能的服务器，您需手动安装Agent插件的操作指引。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13631/156016559748953_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13631/156223148148953_zh-CN.png)
+
+## 注意事项 {#section_ort_h99_hi3 .section}
+
+非阿里云服务器必须通过安装程序（Windows）或脚本命令（Linux）安装云安全中心Agent。
+
+如果您的非阿里云服务器通过以下方式安装了Agent，则您需要删除云安全中心Agent目录后，按照下述手动安装步骤重新安装Agent。
+
+-   通过已安装云安全中心Agent的镜像批量安装服务器。
+-   从已安装云安全中心Agent的服务器上，直接复制云安全中心Agent文件。
+
+**云安全中心Agent文件目录**
+
+-   Windows：C:\\Program Files \(x86\)\\Alibaba\\Aegis
+-   Linux：/usr/local/aegis
 
 ## 一键自动安装Agent {#section_6zm_lum_3t3 .section}
 
@@ -32,16 +46,16 @@
 -   如果您已在服务器上安装了安全软件（如安全狗、云锁等），可能会导致Agent插件无法正常安装。建议您在安装Agent插件前确认您的服务器上是否存在这类安全软件。如果存在，建议您先关闭或卸载该安全软件之后再安装Agent插件。
 
 1.  登录[云安全中心管理控制台](https://yundunnext.console.aliyun.com/?p=sas)。
-2.  单击 **设置** \> **安装/卸载**。
+2.  单击**设置** \> **安装/卸载**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13631/156016559842148_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13631/156223148142148_zh-CN.png)
 
 3.  单击**操作**栏的**安装客户端**，勾选单个服务器安装Agent，或单击左下角**一键安装**对多台服务器执行批量安装Agent。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13631/156016559842154_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13631/156223148142154_zh-CN.png)
 
 
-Agent 插件安装完成约五分钟后，您即可在**资产管理**中查看您服务器的在线情况：阿里云服务器将会从**关闭**变成**开启**。
+Agent插件安装完成约五分钟后，您即可在**资产管理**中查看您服务器的在线情况：阿里云服务器将会从**关闭**变成**开启**。
 
 **说明：** 一键安装后如果客户端状态显示为**安装失败**并提示**未安装云助手**，请先安装云助手。云助手安装相关内容参见文档[云助手](../../../../intl.zh-CN/部署与运维/云助手/云助手概述.md#)。
 
@@ -64,13 +78,13 @@ Agent 插件安装完成约五分钟后，您即可在**资产管理**中查看�
 **说明：** 手动安装Agent前，请确认该服务器已正常运行，并且网络已连通。
 
 1.  登录[云安全中心控制台](https://yundun.console.aliyun.com/?p=sas)。
-2.  单击 **设置** \> **安装/卸载**。
+2.  单击**设置** \> **安装/卸载**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13631/156016559842148_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13631/156223148142148_zh-CN.png)
 
 3.  根据您的服务器操作系统选择安装步骤，获取最新版本Agent插件。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13631/156016559948991_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13631/156223148248991_zh-CN.png)
 
     -   **Windows 系统** 
         1.  在安装Agent页面，单击**点击下载**下载最新版本Agent安装文件到本地计算机。
@@ -78,13 +92,13 @@ Agent 插件安装完成约五分钟后，您即可在**资产管理**中查看�
         3.  在您的Windows服务器上以管理员权限运行Agent插件安装程序。
         4.  非阿里云服务器输入安装验证Key关联您的阿里云账号。您可在Agent安装页面找到您的安装验证Key。
 
-            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13631/156016559948994_zh-CN.png)
+            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13631/156223148248994_zh-CN.png)
 
             **说明：** 每个安装验证KEY有效期为1小时，超过该时间将无法正确安装Agent插件。安装插件前请及时刷新安装验证KEY。
 
     -   **Linux 系统** 
 
-        1.  根据您的实际情况，在安装Agent页面选择 **阿里云服务器** 或 **非阿里云服务器**。
+        1.  根据您的实际情况，在安装Agent页面选择**阿里云服务器**或**非阿里云服务器**。
         2.  以管理员身份登录您的Linux服务器。
         3.  根据您的服务器，选择32位或64位的安装命令并复制至您的Linux服务器上。
         4.  执行安装命令即可完成Agent插件的下载及安装。
@@ -97,20 +111,6 @@ Agent插件安装完成约五分钟后，您即可在云安全中心管理控制
 -   非阿里云服务器将会被添加至您的服务器列表中。
 
 **说明：** 请不要对无需保护的机器（例如：线下测试机器、您自己的工作电脑等）安装Agent。
-
-## 注意事项 {#section_0pl_yha_wmw .section}
-
-非阿里云服务器必须通过安装程序（Windows）或脚本命令（Linux）安装云安全中心Agent。
-
-如果您的非阿里云服务器通过以下方式安装了Agent，则您需要删除云安全中心Agent目录后，按照上述手动安装步骤重新安装Agent。
-
--   通过已安装云安全中心Agent的镜像批量安装服务器。
--   从已安装云安全中心Agent的服务器上，直接复制云安全中心Agent文件。
-
-**云安全中心Agent文件目录**
-
--   Windows：C:\\Program Files \(x86\)\\Alibaba\\Aegis
--   Linux：/usr/local/aegis
 
 ## 后续步骤 {#section_csp_z1d_zdb .section}
 
