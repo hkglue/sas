@@ -82,6 +82,28 @@ http(s)://[Endpoint]/?Action=DescribeStrategyExecDetail
 
 正常返回示例
 
+`XML` 格式
+
+``` {#xml_return_success_demo}
+<DescribeStrategyExecDetail>
+  <RequestId>6489FA6A-D241-4380-9D8C-A8804484CA40</RequestId>
+  <EndTime>2019-04-10 00:58:30</EndTime>
+  <Percent>100%</Percent>
+  <FailCount>1</FailCount>
+  <StartTime>2019-04-10 00:19:01</StartTime>
+  <SuccessCount>1</SuccessCount>
+  <Source>Schedule</Source>
+  <FailedEcsList>
+    <InstanceName>health-check002</InstanceName>
+    <IP>1.1.1.1</IP>
+    <IntranetIp>172.1.1.1</IntranetIp>
+    <Reason>Agent offline</Reason>
+  </FailedEcsList>
+  <InProcessCount>0</InProcessCount>
+</DescribeStrategyExecDetail>
+
+```
+
 `JSON` 格式
 
 ``` {#json_return_success_demo}
