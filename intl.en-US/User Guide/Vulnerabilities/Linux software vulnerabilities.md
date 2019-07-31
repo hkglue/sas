@@ -6,26 +6,26 @@ This topic describes how to view and manage Linux software vulnerabilities in Se
 
 ## Procedure {#section_lst_wsc_ygb .section}
 
-1.  Choose **Vulnerabilities** \> **Linux Software Vulnerabilities**.
+1.  Choose **Precaution** \> **Vulnerabilities** \> **Linux Software Vulnerabilities**.
 
     On the **Linux Software Vulnerabilities** page, you can view security bulletins about the Linux vulnerabilities detected by Security Center. Each security bulletin has a title that starts with USN, RHSA, or CVE.
 
     You can click a security bulletin to view details of the corresponding vulnerabilities.
 
-    ![](images/39856_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15298/156454129339856_en-US.png)
 
 2.  On the Linux Software Vulnerabilities page, you can perform the following operations: view security bulletins about the vulnerabilities detected by Security Center, view vulnerability details, fix vulnerabilities, verify whether a vulnerability has been fixed, search vulnerabilities by severity level and status, add vulnerabilities to the whitelist, and ignore vulnerabilities.
     -   **View vulnerability details** 
 
         Click a vulnerability name to view details. On the vulnerability details page, you can view a description of this vulnerability, its severity level, assets affected by this vulnerability, and the vulnerability status. You can also choose to fix this vulnerability, verify whether it has been fixed, or ignore it.
 
-        ![](images/39857_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15298/156454129339857_en-US.png)
 
         The vulnerability details page also displays information about **correlated vulnerabilities** and assets that are affected by these vulnerabilities. You can easily analyze and handle these vulnerabilities on this page.
 
-        ![](images/39858_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15298/156454129339858_en-US.png)
 
-        On the vulnerability details page, click an **affected asset** to view all vulnerabilities that are correlated with the asset. You can also choose **Assets** \> **Vulnerabilities** to open this page. ![](images/39876_en-US.png)
+        On the vulnerability details page, click an **affected asset** to view all vulnerabilities that are correlated with the asset. You can also choose **Assets** \> **Vulnerabilities** to open this page. ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15298/156454129339876_en-US.png)
 
     -   **Vulnerability priorities \(urgency levels\)** 
 
@@ -34,7 +34,7 @@ This topic describes how to view and manage Linux software vulnerabilities in Se
         -   Red indicates **high** priority.
         -   Orange indicates **medium** priority.
         -   Gray indicates **low** priority.
-        ![](images/39814_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/156454129439814_en-US.png)
 
         **Note:** We recommend that you immediately fix high priority vulnerabilities.
 
@@ -42,11 +42,11 @@ This topic describes how to view and manage Linux software vulnerabilities in Se
 
         On the vulnerability details page, select a vulnerability and click its **Vulnerability Number** to go to the Alibaba Cloud vulnerability library.
 
-        ![](images/39873_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15298/156454129439873_en-US.png)
 
         On the Alibaba Cloud vulnerability library page, you can view more details about this vulnerability, including the detailed description, severity level, time of discovery, and mitigations.
 
-        ![](images/39874_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15298/156454129439874_en-US.png)
 
     -   **Vulnerability severity levels \(emergency degrees\)** 
 
@@ -58,7 +58,7 @@ This topic describes how to view and manage Linux software vulnerabilities in Se
 
         After you click **Verify**, the vulnerability **status** is changed to **Verifying**. It takes several seconds to verify vulnerabilities.
 
-        ![](images/39859_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15298/156454129439859_en-US.png)
 
     -   **Fix vulnerabilities** 
 
@@ -68,7 +68,7 @@ This topic describes how to view and manage Linux software vulnerabilities in Se
 
         On the Linux Software Vulnerabilities page, you can search vulnerabilities by vulnerability name, severity level \(high, medium, and low\), or vulnerability status \(handled, unhandled\).
 
-        ![](images/39860_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15298/156454129439860_en-US.png)
 
         **Note:** You can also fuzzy search vulnerabilities by name.
 
@@ -76,13 +76,13 @@ This topic describes how to view and manage Linux software vulnerabilities in Se
 
         On the Linux Software Vulnerabilities page, you can select one or multiple vulnerabilities and click **Add to Whitelist** to add the selected vulnerabilities to the whitelist. After a vulnerability is added to the whitelist, Security Center does not send alarms when this vulnerability is detected.
 
-        ![](images/39861_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15298/156454129539861_en-US.png)
 
         Whitelisted vulnerabilities are removed from the vulnerability list on the Linux Software Vulnerabilities page. You can click [Settings](reseller.en-US/User Guide/Vulnerabilities/Vulnerability management settings and whitelist configuration.md#) in the upper-right corner and view these vulnerabilities in the **Whitelisted Vulnerabilities** table.
 
         If you want Security Center to detect and send alarms on whitelisted vulnerabilities again, select a vulnerability and click **Remove** to remove this vulnerability from the whitelist on the Settings page.
 
-         ![](images/39827_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/156454129539827_en-US.png)
 
     -   **Ignore vulnerabilities** 
 
@@ -96,9 +96,9 @@ This topic describes how to view and manage Linux software vulnerabilities in Se
 
         **Note:** It may take a few minutes to export the records of vulnerabilities depending on the data size.
 
-    -   On the vulnerability details page, you can click ![](images/39821_en-US.png) to save multiple vulnerabilities to a group. This allows you to track vulnerabilities by group.
+    -   On the vulnerability details page, you can click ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/156454129539821_en-US.png) to save multiple vulnerabilities to a group. This allows you to track vulnerabilities by group.
 
-        ![](images/39862_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15298/156454129539862_en-US.png)
 
 
 ## Vulnerability details {#section_dhc_1vq_32b .section}
@@ -143,7 +143,7 @@ You can fix medium priority vulnerabilities based on your business needs.
 You may fix low priority vulnerabilities based on your needs.
 
 
- For more information about fixing vulnerabilities, see [Prioritize vulnerabilities](../../../../reseller.en-US/FAQ/Frequently Asked Questions (Hidden directory)/Prioritize vulnerabilities to be fixed.md#).
+ For more information about fixing vulnerabilities, see [Vulnerability fix prioritization](reseller.en-US/User Guide/Vulnerabilities/Vulnerability fix prioritization.md#).
 
  |
 |Details|You can select a vulnerability and click **Details** under the Actions column to view details of this vulnerability. -   **Commands**: The commands you can use to fix this vulnerability.
