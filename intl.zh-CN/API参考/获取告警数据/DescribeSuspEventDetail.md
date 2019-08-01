@@ -1,12 +1,12 @@
-# DescribeSuspEventDetail {#doc_api_1164134 .reference}
+# DescribeSuspEventDetail {#doc_api_Sas_DescribeSuspEventDetail .reference}
 
-异常事件详情。
+获取异常事件详情。
 
 告警事件分为告警与异常两个维度，一个告警事件包含多个异常事件。该API可以获取异常事件的详情。
 
-## 调试 {#apiExplorer .section}
+## 调试 {#api_explorer .section}
 
-前往【[API Explorer](https://api.aliyun.com/#product=Sas&api=DescribeSuspEventDetail)】在线调试，API Explorer 提供在线调用 API、动态生成 SDK Example 代码和快速检索接口等能力，能显著降低使用云 API 的难度，强烈推荐使用。
+[您可以在OpenAPI Explorer中直接运行该接口，免去您计算签名的困扰。运行成功后，OpenAPI Explorer可以自动生成SDK代码示例。](https://api.aliyun.com/#product=Sas&api=DescribeSuspEventDetail&type=RPC&version=2018-12-03)
 
 ## 请求参数 {#parameters .section}
 
@@ -31,7 +31,7 @@
 
  |
 
-## 返回参数 {#resultMapping .section}
+## 返回数据 {#resultMapping .section}
 
 |名称|类型|示例值|描述|
 |--|--|---|--|
@@ -44,19 +44,19 @@
 |Details| | |异常事件的详情。
 
  |
-|└InfoType|String|download\_url|图标展示的类型。
+|InfoType|String|download\_url|图标展示的类型。
 
  |
-|└Name|String|更新时间|文案的标题。
+|Name|String|更新时间|文案的标题。
 
  |
-|└Type|String|html|文案展示的方式。
+|Type|String|html|文案展示的方式。
 
  -   text：文本方式
 -   html：富文本的方式
 
  |
-|└Value|String|2018-12-12 12:00:00|文案的内容。
+|Value|String|2018-12-12 12:00:00|文案的内容。
 
  |
 |EventDesc|String|该文件极有可能是黑客成功入侵网站后种植的，建议您先确认文件合法性并处理。|异常事件描述。
@@ -141,66 +141,65 @@ http(s)://[Endpoint]/?Action=DescribeSuspEventDetail
 
 ``` {#xml_return_success_demo}
 <DescribeSuspEventDetailResponse>
-  <RequestId>43F670F3-AB40-4E91-BC7D-C57468834F67</RequestId>
-  <HostId>aegis.cn-hangzhou.aliyuncs.com</HostId>
-  <Code>200</Code>
-  <Message>
+	  <RequestId>43F670F3-AB40-4E91-BC7D-C57468834F67</RequestId>
+	  <HostId>aegis.cn-hangzhou.aliyuncs.com</HostId>
+	  <Code>200</Code>
+	  <Message>
 		illegal parameter, xxxx
 	</Message>
-  <EventDesc>该文件极有可能是黑客成功入侵网站后种植的，建议您先确认文件合法性并处理。</EventDesc>
-  <EventTypeDesc>网站后门-发现后门(Webshell)文件</EventTypeDesc>
-  <EventStatus>1</EventStatus>
-  <EventName>WEBSHELL</EventName>
-  <SaleVersion>1</SaleVersion>
-  <IntranetIp>10.0.0.0</IntranetIp>
-  <DataSource>aegis_suspicious_file_v2</DataSource>
-  <InstanceName>ca_cpm_test1</InstanceName>
-  <Type>normal</Type>
-  <CanBeDealOnLine>true</CanBeDealOnLine>
-  <OperateMsg/>
-  <Uuid>bffb12c3-590a-4db2-b538-XXXXXXXXXXXX</Uuid>
-  <Details>
-    <Type>text</Type>
-    <Value>/data/ftpUser/pub/f12cd3bc5b484b0326309b48afb463fb</Value>
-    <InfoType>trojan_path</InfoType>
-    <Name>木马文件路径</Name>
-  </Details>
-  <Details>
-    <Type>text</Type>
-    <Value>--</Value>
-    <Name>影响域名</Name>
-  </Details>
-  <Details>
-    <Type>text</Type>
-    <Value>2018-10-30 05:00:56</Value>
-    <InfoType>frist_found_time</InfoType>
-    <Name>首次发现时间</Name>
-  </Details>
-  <Details>
-    <Type>text</Type>
-    <Value>2018-10-30 11:43:45</Value>
-    <InfoType>update_time</InfoType>
-    <Name>更新时间</Name>
-  </Details>
-  <Details>
-    <Type>text</Type>
-    <Value>Webshell</Value>
-    <InfoType>trojan_type</InfoType>
-    <Name>木马类型</Name>
-  </Details>
-  <Details>
-    <Type>html</Type>
-    <Value>&lt;a href="http://yundun-aegis-webshell-file.oss-cn-shanghai.aliyuncs.com/XXXXXXXXXXX?Expires=1540899863&amp;OSSAccessKeyId=XXXXXX&amp;Signature=XXXXXX;response-content-disposition=attachment%3Bfilename%3Df12cd3bc5b484b0326309b48afb463fb"&gt;下载&lt;/a&gt;</Value>
-    <InfoType>download_url</InfoType>
-    <Name>源文件下载</Name>
-  </Details>
-  <InternetIp>39.105.41.176</InternetIp>
-  <Level>serious</Level>
-  <Id>129636</Id>
-  <LastTime>2018-10-30 11:43:46</LastTime>
-  <SasId>39938056</SasId>
-</DescribeSuspEventDetailResponse>
-
+	  <EventDesc>该文件极有可能是黑客成功入侵网站后种植的，建议您先确认文件合法性并处理。</EventDesc>
+	  <EventTypeDesc>网站后门-发现后门(Webshell)文件</EventTypeDesc>
+	  <EventStatus>1</EventStatus>
+	  <EventName>WEBSHELL</EventName>
+	  <SaleVersion>1</SaleVersion>
+	  <IntranetIp>10.0.0.0</IntranetIp>
+	  <DataSource>aegis_suspicious_file_v2</DataSource>
+	  <InstanceName>ca_cpm_test1</InstanceName>
+	  <Type>normal</Type>
+	  <CanBeDealOnLine>true</CanBeDealOnLine>
+	  <OperateMsg></OperateMsg>
+	  <Uuid>bffb12c3-590a-4db2-b538-XXXXXXXXXXXX</Uuid>
+	  <Details>
+		    <Type>text</Type>
+		    <Value>/data/ftpUser/pub/f12cd3bc5b484b0326309b48afb463fb</Value>
+		    <InfoType>trojan_path</InfoType>
+		    <Name>木马文件路径</Name>
+	  </Details>
+	  <Details>
+		    <Type>text</Type>
+		    <Value>--</Value>
+		    <Name>影响域名</Name>
+	  </Details>
+	  <Details>
+		    <Type>text</Type>
+		    <Value>2018-10-30 05:00:56</Value>
+		    <InfoType>frist_found_time</InfoType>
+		    <Name>首次发现时间</Name>
+	  </Details>
+	  <Details>
+		    <Type>text</Type>
+		    <Value>2018-10-30 11:43:45</Value>
+		    <InfoType>update_time</InfoType>
+		    <Name>更新时间</Name>
+	  </Details>
+	  <Details>
+		    <Type>text</Type>
+		    <Value>Webshell</Value>
+		    <InfoType>trojan_type</InfoType>
+		    <Name>木马类型</Name>
+	  </Details>
+	  <Details>
+		    <Type>html</Type>
+		    <Value>&lt;a href="http://yundun-aegis-webshell-file.oss-cn-shanghai.aliyuncs.com/XXXXXXXXXXX?Expires=1540899863&amp;OSSAccessKeyId=XXXXXX&amp;Signature=XXXXXX;response-content-disposition=attachment%3Bfilename%3Df12cd3bc5b484b0326309b48afb463fb"&gt;下载&lt;/a&gt;</Value>
+		    <InfoType>download_url</InfoType>
+		    <Name>源文件下载</Name>
+	  </Details>
+	  <InternetIp>39.105.41.176</InternetIp>
+	  <Level>serious</Level>
+	  <Id>129636</Id>
+	  <LastTime>2018-10-30 11:43:46</LastTime>
+	  <SasId>39938056</SasId>
+         </DescribeSuspEventDetailResponse>
 ```
 
 `JSON` 格式
@@ -270,5 +269,5 @@ http(s)://[Endpoint]/?Action=DescribeSuspEventDetail
 
 ## 错误码 { .section}
 
-[查看本产品错误码](https://error-center.aliyun.com/status/product/Sas)
+访问[错误中心](https://error-center.alibabacloud.com/status/product/Sas)查看更多错误码。
 
