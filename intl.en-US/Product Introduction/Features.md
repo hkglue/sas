@@ -1,6 +1,6 @@
 # Features {#concept_fc1_xvb_zdb .concept}
 
-Security Center is available in Basic edition and Enterprise Editio.:
+Security Center is available in Basic, Advanced and Enterprise Edition.
 
 -   **Basic** Edition: Detects unusual logon and server vulnerabilities. Basic Edition is available for free.
 -   **Enterprise** Edition: Provides comprehensive security services, including security events, server vulnerability detection and resolution, baseline check, asset fingerprints, and log retrieval. Enterprise Edition is charged by annual and monthly subscription.
@@ -9,9 +9,11 @@ Security Center is available in Basic edition and Enterprise Editio.:
 
 The following table compares the features provided by Basic Edition, Advanced Edition and Enterprise Edition of Security Center:
 
--   **×** indicates that the related feature is excluded in the service.
+-   **X** indicates that the related feature is excluded in the service.
 -   **√** indicates that the related feature is included in the service.
 -   **Value-added** indicates that you must purchase the related feature additionally.
+
+**Note:** **Basic** Edition detects unusual logon and server vulnerabilities. Basic Edition is available for free. **Advanced** and **Enterprise** Edition provides comprehensive security services, and they are charged by annual and monthly subscription.
 
 |Feature|Item|Description|Basic|Advanced|Enterprise|
 |-------|----|-----------|-----|--------|----------|
