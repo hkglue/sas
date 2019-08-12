@@ -39,9 +39,8 @@
 
  取值：
 
- -zh：中文
-
- -en：英文
+ -   zh：中文
+-   en：英文
 
  |
 |Necessity|String|否|asap,later,nntf|漏洞修复必要性等级。多个等级用英文逗号分隔。
