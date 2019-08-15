@@ -8,7 +8,7 @@ RAM用户新创建的时候默认无任何权限。
 
 使用RAM子账号登录云安全中心并进行操作时，提示“当前操作未被授权”。这种情况下，可能是由于您使用了未经过主账号授权的子账号。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/711042/156585403050404_zh-CN.png)
+![子账号授权](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/711042/156585593650404_zh-CN.png)
 
 ## 解决方法 {#section_6nd_dr1_9xw .section}
 
@@ -17,12 +17,10 @@ RAM用户新创建的时候默认无任何权限。
 1.  联系主账号管理员登录主账号。
 2.  主账号为子账号授予管理云安全中心的系统权限。子账号授权详细内容参见[为RAM角色授权](../../../../intl.zh-CN/用户指南/角色/为RAM角色授权.md#)。
 
-    ![子账号授权](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/711042/156585403055689_zh-CN.png)
+    ![子账号授权](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/711042/156585593655689_zh-CN.png)
 
     **说明：** 授权前，请确认要授权的子账号是否正确。
 
 
-授权完成后，使用该子账号登录云安全中心，进行相应的操作。
-
-RAM子账号登录控制台地址：[http://signin.aliyun.com/aegiserver/login.htm](https://signin.aliyun.com/aegiserver/login.htm?spm=5176.2020520153.10101.d1.2a9a6253K2thf1)
+授权完成后，使用该子账号[登录云安全中心](https://signin.alibabacloud.com/login.htm)，进行相应的操作。
 
