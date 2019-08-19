@@ -1,8 +1,8 @@
-# AK泄露检测 {#concept_vb5_3jw_f2b .concept}
+# AK泄露检测 {#concept_vb5_3jw_f2b .task}
 
 云安全中心可以检测在Github等第三方代码托管网站上的公开代码中可能包含的您资产的登录账号和密码信息。
 
-**说明：** 阿里云云安全中心企业版支持AK泄露检测功能，基础版和高级版不支持该功能。基础版和高级版用户需先升级至企业版，才可使用AK泄露检测服务。
+阿里云云安全中心企业版支持AK泄露检测功能，基础版和高级版不支持该功能。基础版和高级版用户需先升级至企业版，才可使用AK泄露检测服务。
 
 ## 功能说明 {#section_al5_jrq_zdb .section}
 
@@ -16,34 +16,32 @@
 
 ## 操作步骤 {#section_dtj_ss4_f2b .section}
 
-参照以下步骤，查看您的资产的AK和账密泄漏情报：
-
 1.  登录[云安全中心控制台](https://yundun.console.aliyun.com/?p=sas)。
-2.  在左侧导航栏，选择**威胁检测** \> **AK泄露检测**。
-3.  您可以在AK泄露检测页面，进行以下操作。
+2.  在左侧导航栏，单击**威胁检测** \> **AK泄露检测**。
+3.  您可以在AK泄露检测页面，进行以下操作。 
     -   **查看AccessKey泄露情报列表** 
 
         您可以查看云安全中心检测到的所有信息泄露情报：AccessKey泄露次数及检测列表、检测平台、最近一次检测时间。
 
-        ![0](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15125/15651419356504_zh-CN.jpg)
+        ![查看AccessKey泄露情报列表](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15125/15661810306504_zh-CN.jpg)
 
-    -   **搜索特定AccessKey泄露情报** 
+    -   **搜索指定AccessKey泄露情报** 
 
         在搜索框输入AccessKey ID可以快速定位到想要查看的记录。
 
-        ![1](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15125/156514193554200_zh-CN.png)
+        ![搜索特定AccessKey泄露情报](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15125/156618103154200_zh-CN.png)
 
     -   **执行立即检测** 
 
         您可以在**AccessKey泄露检测**页，单击**立即检测**，检测最新的AccessKey泄露情报。
 
-        ![2](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15125/156514193554201_zh-CN.png)
+        ![执行立即检测](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15125/156618103154201_zh-CN.png)
 
     -   **查看AccessKey泄露检测详情** 
 
         您可以选择一个记录，单击其操作列下的**详情**，查看详细的情报信息。
 
-        ![3](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15125/15651419366505_zh-CN.jpg)
+        ![查看AccessKey泄露检测详情](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15125/15661810316505_zh-CN.jpg)
 
     -   **处理检测出的AK泄露事件** 
 
@@ -54,11 +52,11 @@
 
             您可以在**AccessKey泄露检测**列表，单击一个检测记录右侧操作列下的**处理**，选择处理方式。
 
-            ![2](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15125/156514193654185_zh-CN.png)
+            ![处理检测结果](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15125/156618103154185_zh-CN.png)
 
             如果选择加入白名单处理，该检测项处理状态变为**已加白名单**，并进入**已处理**列表。需要回复检测时，可以从**已处理**列表，进入AccessKey泄露详情页进行**取消白名单**操作。
 
-            ![3](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15125/156514193654188_zh-CN.png)
+            ![取消白名单](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15125/156618103254188_zh-CN.png)
 
         **说明：** 建议您禁止员工将公司源代码托管在GitHub等代码平台，或使用**私有的**Github代码托管来管理代码，搭建企业内部的代码托管系统，防止源代码和敏感信息泄露。
 
@@ -66,6 +64,6 @@
 
         您可以单击**AccessKey泄露检测**列表右上角的导出按钮。报表导出完成后，安全告警页面右上角会提示导出完成。单击右上角导出完成提示对话框中的**下载**，将excel格式的报表下载到本地。
 
-        ![4](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15125/156514193754205_zh-CN.png)
+        ![下载](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15125/156618103254205_zh-CN.png)
 
 
