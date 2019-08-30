@@ -8,16 +8,16 @@ RAM用户新创建的时候默认无任何权限。
 
 使用RAM子账号登录云安全中心并进行操作时，提示“当前操作未被授权”。这种情况下，可能是由于您使用了未经过主账号授权的子账号。
 
-![子账号授权](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/711042/156585593650404_zh-CN.png)
+![子账号授权](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/711042/156714250650404_zh-CN.png)
 
 ## 解决方法 {#section_6nd_dr1_9xw .section}
 
 为可信的RAM子账号授予AliyunYundunSASFullAccess（管理云安全中心）权限。
 
 1.  联系主账号管理员登录主账号。
-2.  主账号为子账号授予管理云安全中心的系统权限。子账号授权详细内容参见[为RAM角色授权](../../../../intl.zh-CN/用户指南/角色/为RAM角色授权.md#)。
+2.  主账号为子账号授予管理云安全中心的系统权限。子账号授权详细内容参见[为RAM用户授权](../../../../intl.zh-CN/用户指南/用户/为 RAM 用户授权.md#)。
 
-    ![子账号授权](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/711042/156585593655689_zh-CN.png)
+    ![子账号授权](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/711042/156714250655689_zh-CN.png)
 
     **说明：** 授权前，请确认要授权的子账号是否正确。
 
