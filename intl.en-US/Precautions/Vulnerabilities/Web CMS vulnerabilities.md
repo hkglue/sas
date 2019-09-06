@@ -12,26 +12,28 @@ Security Center montiors the latest security vulnerabilities and provides patche
 
 1.  Choose **Vulnerabilities** \> **Web CMS Vulnerabilities**.
 
-    ![](images/39865_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13639/156775926139865_en-US.png)
 
 2.  On the Web CMS Vulnerabilities page, you can perform the following operations: view all CMS vulnerabilities detected by Security Center, fix vulnerabilities, search vulnerabilities by severity level and status, add vulnerabilities to the whitelist, and ignore vulnerabilities.
     -   **View vulnerability details** 
 
         Click a vulnerability name to view details. On the vulnerability details page, you can view a description of this vulnerability, its severity level, assets affected by this vulnerability, and the status of this vulnerability. You can also choose to fix this vulnerability or ignore it.
 
-        ![](images/39899_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13639/156775926139899_en-US.png)
 
         The vulnerability details page also displays information about **correlated vulnerabilities** and assets that are affected by these vulnerabilities. You can easily analyze and handle these vulnerabilities on this page.
 
-        ![](images/39900_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13639/156775926139900_en-US.png)
 
-        On the vulnerability details page, click an **affected asset** to view all the vulnerabilities that are correlated with the asset. You can also choose **Assets** \> **Vulnerabilities** to open this page.![](images/39908_en-US.png)
+        On the vulnerability details page, click an **affected asset** to view all the vulnerabilities that are correlated with the asset. You can also choose **Assets** \> **Vulnerabilities** to open this page.
+
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13639/156775926139908_en-US.png)
 
     -   **Vulnerability priorities \(urgency levels\)** 
 
         CMS vulnerabilities can cause serious damage. Therefore, CMS vulnerabilities have **high** priority and are marked in red.
 
-        ![](images/39911_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13639/156775926139911_en-US.png)
 
         **Note:** We recommend that you fix CMS vulnerabilities as soon as possible.
 
@@ -39,7 +41,7 @@ Security Center montiors the latest security vulnerabilities and provides patche
 
         On the Web CMS Vulnerabilities page, you can search vulnerabilities by vulnerability name, severity level \(high, medium, and low\), or vulnerability status \(handled, unhandled\).
 
-        ![](images/39904_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13639/156775926139904_en-US.png)
 
         **Note:** You can also fuzzy search vulnerabilities by name.
 
@@ -74,13 +76,13 @@ Security Center montiors the latest security vulnerabilities and provides patche
 
         On the Web CMS Vulnerabilities page, you can select one or multiple vulnerabilities and click **Add to Whitelist** to add the selected vulnerabilities to the whitelist. After a vulnerability is added to the whitelist, Security Center does not send alarms when this vulnerability is detected.
 
-        ![](images/39905_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13639/156775926239905_en-US.png)
 
         Whitelisted vulnerabilities are removed from the vulnerability list. You can click [Settings](reseller.en-US/Precautions/Vulnerabilities/Vulnerability management settings and whitelist configuration.md#) in the upper-right corner and view these vulnerabilities in the **Whitelisted Vulnerabilities** table.
 
         If you want Security Center to detect and send alarms on whitelisted vulnerabilities again, select the vulnerability and click **Remove** to remove this vulnerability from the whitelist on the Settings page.
 
-        ![](images/39906_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13639/156775926239906_en-US.png)
 
     -   **Export vulnerabilities** 
 
@@ -88,8 +90,8 @@ Security Center montiors the latest security vulnerabilities and provides patche
 
         **Note:** It may take a few minutes to export vulnerability records depending on the data size.
 
-    -   On the vulnerability details page, you can click ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/156774776139821_en-US.png) to save multiple vulnerabilities to a group. This allows you to track vulnerabilities by group.
+    -   On the vulnerability details page, you can click ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/156775926239821_en-US.png) to save multiple vulnerabilities to a group. This allows you to track vulnerabilities by group.
 
-        ![](images/39907_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13639/156775926239907_en-US.png)
 
 
