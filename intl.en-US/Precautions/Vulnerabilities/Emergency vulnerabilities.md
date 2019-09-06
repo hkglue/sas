@@ -6,22 +6,22 @@ The Emergency Vulnerabilities page displays the latest critical vulnerabilities 
 
 ## Procedure {#section_l5r_ynl_zgb .section}
 
-1.  Choose **Vulnerabilities** \> **Emergency Vulnerabilities**.
+1.  Choose **Vulnerabilities** \> **Emergency**.
 
-    ![](images/39938_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118680/156775977539938_en-US.png)
 
-2.  On the **Emergency Vulnerabilities** page, you can view a list of the latest security vulnerabilities and their detailed records.
-    -   You can click **Check Now**/**Inspect Again** on the right side of the **Emergency Vulnerabilities** page to see if your assets are affected by the selected vulnerability.
+2.  On the **Emergency** page, you can view a list of the latest security vulnerabilities and their detailed records.
+    -   You can click **Check Now**/**Inspect Again** on the right side of the **Emergency**Vulnerabilities page to see if your assets are affected by the selected vulnerability.
 
-        ![](images/39960_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118680/156775977639960_en-US.png)
 
-        **Note:** Currently, Security Center does not show the **progress of the check**. If threats are detected, you will be notified of the **assets with urgent vulnerabilities**. You can click an asset name to go to the vulnerability details page and take action.
+        **Note:** 
 
-        **Note:** If you have a large number of assets, it may take up to 20 minutes to complete the checkup, during which the following message is displayed: **No Risk**.
-
+        -   Currently, Security Center does not show the **progress of the check**. If threats are detected, you will be notified of the **assets with urgent vulnerabilities**. You can click an asset name to go to the vulnerability details page and take action.
+        -   If you have a large number of assets, it may take up to 20 minutes to complete the checkup, during which the following message is displayed: **No Risk**.
     -   Click a vulnerability name to go to the vulnerability details page. You can find details of this vulnerability, its priority \(urgency level\), assets affected by this vulnerability, and recommended fixes on this page.
 
-        ![](images/39961_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118680/156775977649823_en-US.png)
 
         -   You can view information about the assets that are affected by this vulnerability.
         -   You can view the vulnerability status, which can be one of the following:
@@ -34,8 +34,7 @@ The Emergency Vulnerabilities page displays the latest critical vulnerabilities 
                 -   Fix Undoing Failed: An error occurred while undoing the fix. The vulnerable file may not exist.
                 **Note:** For **handled** vulnerabilities, you can choose to **undo** fixes. When a fix is undone, the vulnerability status is changed to **Unhandled**.
 
-            -   **Unhandled** 
-                -   Unfixed: The vulnerability is yet to be fixed.
+            -   **Unhandled**: Unfixed, the vulnerability is yet to be fixed.
         -   View vulnerability **priorities \(urgency levels\)**.
 
             The priority \(urgency level\) of a vulnerability is determined based on multiple factors, such as the severity of the vulnerability, the time of discovery, and the server's environment.
