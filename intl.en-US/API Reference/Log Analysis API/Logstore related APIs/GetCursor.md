@@ -1,12 +1,12 @@
 # GetCursor {#concept_ffg_3dm_12b .concept}
 
-The GetCursor API is used to get the cursor based on the time. The following figure shows the relationship among the project, Logstore, shard, and cursor.
+You can call this operation to query a cursor based on the server time. The following figure shows the relationships among the project, Logstore, shard, and cursor.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13233/15530665506710_en-US.png)
+![](images/6710_en-US.png "Relationships among the project, Logstore, shard, and cursor")
 
 -   A project has multiple Logstores.
--   Each Logstore has multiple shards.
--   You can get the location of a specified log by using the cursor.
+-   A Logstore has multiple shards.
+-   You can use a cursor to obtain the location of a specific log.
 
 ## Request syntax {#section_j5v_14t_12b .section}
 
@@ -18,35 +18,33 @@ Host: <Project Endpoint>
 x-log-apiversion: 0.6.0
 ```
 
-## Request parameter {#section_mx5_b4t_12b .section}
+## Request parameters {#section_mx5_b4t_12b .section}
 
-|Parameter Name|Type|Required |Description|
-|:-------------|:---|:--------|:----------|
-|shard|string|Yes|The Shard.|
-|type|string|Yes| The cursor.|
-|from|string|Yes|The time point \(in UNIX format and measured in seconds\). The from\_time, begin\_time, or end\_time.|
+|Parameter|Type|Required|Description|
+|:--------|:---|:-------|:----------|
+|shard|String|Yes| |
+|type|String|Yes|The type of data to be queried. Set this parameter to cursor.|
+|from|String|Yes|The time used to query a cursor. Set this parameter to a Unix timestamp or a string such as begin or end.|
 
 **Logstore lifecycle**
 
-The lifecycle of a Logstore is specified by the lifeCycle field in the attribute.  For example, the current time is 2015-11-11 09:00:00  and lifeCycle=24.  Then, the data time period that can be consumed in each shard is \[2015-11-10 09:00:00,2015-11-11  09:00:00\) and the time here is the server time.
+The lifecycle of a Logstore is specified by the ttl parameter in the Logstore attributes. For example, the current time is 2018-11-11 09:00:00 and the ttl parameter is set to 5. The time interval of consumable data in each shard is \[2018-11-05 09:00:00, 2018-11-11 09:00:00\). The server time is used.
 
-By using the parameter from, you can locate the logs within the lifecycle in the shard. Assume that the Logstore lifecycle is \[begin\_time,end\_time\) and the parameter from is set to from\_time, then: \[begin\_time,end\_time\), from=from\_time.
+Using the from parameter, you can locate the logs within the lifecycle of a shard. Assume that the Logstore lifecycle is \[begin\_time, end\_time\) and the from parameter is set to from\_time, then:
 
-```
-  from_time <= begin_time or from_time == "begin" : Returns the cursor location corresponding to begin_time.
- from_time >= end_time or from_time == "end" : Returns the cursor location for writing the next entry at the current time point (no data at this cursor location currently).
-  from_time > begin_time and from_time < end_time : Returns the cursor location for the first data packet whose receipt time at the server is >= from_time.
-```
+-   `from_time ≤ begin_time or from_time = "begin"`: returns the cursor corresponding to the log whose timestamp is at begin\_time.
+-   `from_time ≥ end_time or from_time = "end"`: returns the cursor corresponding to the next log to be written at the current time \(there is no data in the current cursor location\).
+-   `from_time > begin_time and from_time < end_time`: returns the cursor corresponding to the first data packet that the server receives later than or at from\_time.
 
-**Request header**
+**Request header fields**
 
-The GetCursor API does not have a special request header.  For more information about  the public request headers of Log Service APIs, see  [Public request header](intl.en-US/API Reference/Public request header.md).
+This operation does not require special request header fields. For more information about the common request header fields of Log Service operations, see [Common request header fields](intl.en-US/API Reference/Public request header.md).
 
-**Response header**
+**Response header fields**
 
-The GetCursor API does not have a special response header.  For more information about the public response headers of Log Service APIs, see [Public response header](intl.en-US/API Reference/Public response header.md).
+This operation does not return special response header fields. For more information about the common response header fields of Log Service operations, see [Common response header fields](intl.en-US/API Reference/Public response header.md).
 
-**Response element**
+**Response parameters**
 
 ```
 {
@@ -54,21 +52,21 @@ The GetCursor API does not have a special response header.  For more informatio
 }
 ```
 
-**Error code**
+**Error codes**
 
-Besides  the  [common error codes](intl.en-US/API Reference/Common error codes.md) of Log Service APIs, the GetCursor API may return the following special error codes.
+In addition to the [common errors](intl.en-US/API Reference/Common error codes.md) of Log Service operations, this operation also returns some specific errors, as listed in the following table.
 
-|HTTP status code|ErrorCode|ErrorMessage|
-|:---------------|:--------|:-----------|
+|HTTP status code|Error code|Error message|
+|:---------------|:---------|:------------|
 |404|LogStoreNotExist|Logstore \{Name\} does not exist|
 |400|ParameterInvalid|Parameter From is not valid|
 |400|ShardNotExist|Shard \{ShardID\} does not exist|
 |500|InternalServerError|Specified Server Error Message|
 |400|LogStoreWithoutShard|the logstore has no shard|
 
-## Example {#section_e5p_d4t_12b .section}
+## Examples {#section_e5p_d4t_12b .section}
 
-**Request example:**
+**Sample request**
 
 ```
 GET /logstores/sls-test-logstore/shards/0? type=cursor&from=begin
@@ -86,7 +84,7 @@ Header:
 }
 ```
 
-**Response example:**
+**Sample success response**
 
 ```
 Header:
