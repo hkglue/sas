@@ -143,6 +143,285 @@ http(s)://[Endpoint]/?Action=DescribeCheckWarningSummary
 
 正常返回示例
 
+`XML` 格式
+
+``` {#xml_return_success_demo}
+<DescribeCheckWarningSummary>
+  <TotalCount>25</TotalCount>
+  <PageSize>20</PageSize>
+  <RequestId>DFA6CDC5-E826-4D18-A499-BEF9DA31F1AD</RequestId>
+  <CurrentPage>1</CurrentPage>
+  <Count>20</Count>
+  <WarningSummarys>
+    <RiskId>43</RiskId>
+    <LastFoundTime>2019-04-10 00:33:00</LastFoundTime>
+    <MediumWarningCount>0</MediumWarningCount>
+    <WarningMachineCount>3</WarningMachineCount>
+    <CheckCount>16</CheckCount>
+    <HighWarningCount>8</HighWarningCount>
+    <Level>high</Level>
+    <TypeAlias>系统</TypeAlias>
+    <SubTypeAlias>
+			CentOS Linux 7安全基线检查
+			
+		                            </SubTypeAlias>
+    <LowWarningCount>0</LowWarningCount>
+    <RiskName>
+			CentOS Linux 7安全基线检查
+			
+		                            </RiskName>
+  </WarningSummarys>
+  <WarningSummarys>
+    <RiskId>47</RiskId>
+    <LastFoundTime>2019-04-10 00:58:11</LastFoundTime>
+    <MediumWarningCount>0</MediumWarningCount>
+    <WarningMachineCount>2</WarningMachineCount>
+    <CheckCount>15</CheckCount>
+    <HighWarningCount>7</HighWarningCount>
+    <Level>medium</Level>
+    <TypeAlias>系统</TypeAlias>
+    <SubTypeAlias>CentOS Linux 7合规基线检查-等保三级</SubTypeAlias>
+    <LowWarningCount>0</LowWarningCount>
+    <RiskName>CentOS Linux 7合规基线检查-等保三级</RiskName>
+  </WarningSummarys>
+  <WarningSummarys>
+    <RiskId>48</RiskId>
+    <LastFoundTime>2019-04-10 00:58:11</LastFoundTime>
+    <MediumWarningCount>0</MediumWarningCount>
+    <WarningMachineCount>2</WarningMachineCount>
+    <CheckCount>12</CheckCount>
+    <HighWarningCount>6</HighWarningCount>
+    <Level>medium</Level>
+    <TypeAlias>系统</TypeAlias>
+    <SubTypeAlias>CentOS Linux 7合规基线检查-等保二级</SubTypeAlias>
+    <LowWarningCount>0</LowWarningCount>
+    <RiskName>CentOS Linux 7合规基线检查-等保二级</RiskName>
+  </WarningSummarys>
+  <WarningSummarys>
+    <RiskId>3</RiskId>
+    <LastFoundTime>2019-04-10 08:31:32</LastFoundTime>
+    <MediumWarningCount>0</MediumWarningCount>
+    <WarningMachineCount>1</WarningMachineCount>
+    <CheckCount>1</CheckCount>
+    <HighWarningCount>1</HighWarningCount>
+    <Level>high</Level>
+    <TypeAlias>数据库</TypeAlias>
+    <SubTypeAlias>Redis安全基线检查</SubTypeAlias>
+    <LowWarningCount>0</LowWarningCount>
+    <RiskName>Redis安全基线检查</RiskName>
+  </WarningSummarys>
+  <WarningSummarys>
+    <RiskId>19</RiskId>
+    <LastFoundTime>2019-04-10 08:31:32</LastFoundTime>
+    <MediumWarningCount>0</MediumWarningCount>
+    <WarningMachineCount>1</WarningMachineCount>
+    <CheckCount>1</CheckCount>
+    <HighWarningCount>1</HighWarningCount>
+    <Level>high</Level>
+    <TypeAlias>弱密码检测</TypeAlias>
+    <SubTypeAlias>Linux系统登录弱口令检测</SubTypeAlias>
+    <LowWarningCount>0</LowWarningCount>
+    <RiskName>Linux系统登录弱口令检测</RiskName>
+  </WarningSummarys>
+  <WarningSummarys>
+    <RiskId>12</RiskId>
+    <LastFoundTime>2019-04-10 08:31:32</LastFoundTime>
+    <MediumWarningCount>0</MediumWarningCount>
+    <WarningMachineCount>1</WarningMachineCount>
+    <CheckCount>1</CheckCount>
+    <HighWarningCount>1</HighWarningCount>
+    <Level>high</Level>
+    <TypeAlias>弱密码检测</TypeAlias>
+    <SubTypeAlias>FTP匿名登录配置检测</SubTypeAlias>
+    <LowWarningCount>0</LowWarningCount>
+    <RiskName>FTP匿名登录配置检测</RiskName>
+  </WarningSummarys>
+  <WarningSummarys>
+    <RiskId>13</RiskId>
+    <LastFoundTime>2019-04-10 06:58:58</LastFoundTime>
+    <MediumWarningCount>0</MediumWarningCount>
+    <WarningMachineCount>1</WarningMachineCount>
+    <CheckCount>1</CheckCount>
+    <HighWarningCount>1</HighWarningCount>
+    <Level>high</Level>
+    <TypeAlias>弱密码检测</TypeAlias>
+    <SubTypeAlias>Windows系统登录弱口令检测</SubTypeAlias>
+    <LowWarningCount>0</LowWarningCount>
+    <RiskName>Windows系统登录弱口令检测</RiskName>
+  </WarningSummarys>
+  <WarningSummarys>
+    <RiskId>23</RiskId>
+    <LastFoundTime>2019-04-10 14:00:17</LastFoundTime>
+    <MediumWarningCount>0</MediumWarningCount>
+    <WarningMachineCount>0</WarningMachineCount>
+    <CheckCount>8</CheckCount>
+    <HighWarningCount>0</HighWarningCount>
+    <Level>medium</Level>
+    <TypeAlias>中间件</TypeAlias>
+    <SubTypeAlias>Apache Tomcat 安全基线检查</SubTypeAlias>
+    <LowWarningCount>0</LowWarningCount>
+    <RiskName>Apache Tomcat 安全基线检查</RiskName>
+  </WarningSummarys>
+  <WarningSummarys>
+    <RiskId>2</RiskId>
+    <LastFoundTime>2019-04-10 08:31:32</LastFoundTime>
+    <MediumWarningCount>0</MediumWarningCount>
+    <WarningMachineCount>0</WarningMachineCount>
+    <CheckCount>1</CheckCount>
+    <HighWarningCount>0</HighWarningCount>
+    <Level>high</Level>
+    <TypeAlias>弱密码检测</TypeAlias>
+    <SubTypeAlias>PostgreSQL弱密码检测</SubTypeAlias>
+    <LowWarningCount>0</LowWarningCount>
+    <RiskName>PostgreSql登录弱口令检测</RiskName>
+  </WarningSummarys>
+  <WarningSummarys>
+    <RiskId>11</RiskId>
+    <LastFoundTime>2019-04-10 08:31:32</LastFoundTime>
+    <MediumWarningCount>0</MediumWarningCount>
+    <WarningMachineCount>0</WarningMachineCount>
+    <CheckCount>1</CheckCount>
+    <HighWarningCount>0</HighWarningCount>
+    <Level>high</Level>
+    <TypeAlias>弱密码检测</TypeAlias>
+    <SubTypeAlias>MySQL弱密码检测</SubTypeAlias>
+    <LowWarningCount>0</LowWarningCount>
+    <RiskName>MySQL弱密码检测</RiskName>
+  </WarningSummarys>
+  <WarningSummarys>
+    <RiskId>20</RiskId>
+    <LastFoundTime>2019-04-10 08:31:32</LastFoundTime>
+    <MediumWarningCount>0</MediumWarningCount>
+    <WarningMachineCount>0</WarningMachineCount>
+    <CheckCount>1</CheckCount>
+    <HighWarningCount>0</HighWarningCount>
+    <Level>high</Level>
+    <TypeAlias>弱密码检测</TypeAlias>
+    <SubTypeAlias>FTP登陆弱口令检测</SubTypeAlias>
+    <LowWarningCount>0</LowWarningCount>
+    <RiskName>FTP登陆弱口令检测</RiskName>
+  </WarningSummarys>
+  <WarningSummarys>
+    <RiskId>17</RiskId>
+    <LastFoundTime>2019-04-10 06:58:58</LastFoundTime>
+    <MediumWarningCount>0</MediumWarningCount>
+    <WarningMachineCount>0</WarningMachineCount>
+    <CheckCount>1</CheckCount>
+    <HighWarningCount>0</HighWarningCount>
+    <Level>high</Level>
+    <TypeAlias>弱密码检测</TypeAlias>
+    <SubTypeAlias>Microsoft SQL Server弱密码检测</SubTypeAlias>
+    <LowWarningCount>0</LowWarningCount>
+    <RiskName>Microsoft SQL Server登录弱口令检测</RiskName>
+  </WarningSummarys>
+  <WarningSummarys>
+    <RiskId>24</RiskId>
+    <LastFoundTime>2019-04-10 06:52:05</LastFoundTime>
+    <MediumWarningCount>0</MediumWarningCount>
+    <WarningMachineCount>0</WarningMachineCount>
+    <CheckCount>2</CheckCount>
+    <HighWarningCount>0</HighWarningCount>
+    <Level>medium</Level>
+    <TypeAlias>数据库</TypeAlias>
+    <SubTypeAlias>Memcached安全基线检查</SubTypeAlias>
+    <LowWarningCount>0</LowWarningCount>
+    <RiskName>Memcached安全基线检查</RiskName>
+  </WarningSummarys>
+  <WarningSummarys>
+    <RiskId>42</RiskId>
+    <LastFoundTime>2019-02-19 14:59:17</LastFoundTime>
+    <MediumWarningCount>0</MediumWarningCount>
+    <WarningMachineCount>0</WarningMachineCount>
+    <CheckCount>16</CheckCount>
+    <HighWarningCount>0</HighWarningCount>
+    <Level>high</Level>
+    <TypeAlias>系统</TypeAlias>
+    <SubTypeAlias>CentOS Linux 6安全基线检查</SubTypeAlias>
+    <LowWarningCount>0</LowWarningCount>
+    <RiskName>CentOS Linux 6安全基线检查</RiskName>
+  </WarningSummarys>
+  <WarningSummarys>
+    <RiskId>49</RiskId>
+    <LastFoundTime>2019-02-19 14:59:17</LastFoundTime>
+    <MediumWarningCount>0</MediumWarningCount>
+    <WarningMachineCount>0</WarningMachineCount>
+    <CheckCount>12</CheckCount>
+    <HighWarningCount>0</HighWarningCount>
+    <Level>medium</Level>
+    <TypeAlias>系统</TypeAlias>
+    <SubTypeAlias>CentOS Linux 6合规基线检查-等保二级</SubTypeAlias>
+    <LowWarningCount>0</LowWarningCount>
+    <RiskName>CentOS Linux 6合规基线检查-等保二级</RiskName>
+  </WarningSummarys>
+  <WarningSummarys>
+    <RiskId>50</RiskId>
+    <LastFoundTime>2019-02-19 14:59:17</LastFoundTime>
+    <MediumWarningCount>0</MediumWarningCount>
+    <WarningMachineCount>0</WarningMachineCount>
+    <CheckCount>15</CheckCount>
+    <HighWarningCount>0</HighWarningCount>
+    <Level>medium</Level>
+    <TypeAlias>系统</TypeAlias>
+    <SubTypeAlias>CentOS Linux 6合规基线检查-等保三级</SubTypeAlias>
+    <LowWarningCount>0</LowWarningCount>
+    <RiskName>CentOS Linux 6合规基线检查-等保三级</RiskName>
+  </WarningSummarys>
+  <WarningSummarys>
+    <RiskId>55</RiskId>
+    <LastFoundTime>2019-02-19 12:57:23</LastFoundTime>
+    <MediumWarningCount>0</MediumWarningCount>
+    <WarningMachineCount>0</WarningMachineCount>
+    <CheckCount>14</CheckCount>
+    <HighWarningCount>0</HighWarningCount>
+    <Level>medium</Level>
+    <TypeAlias>系统</TypeAlias>
+    <SubTypeAlias>Linux Ubuntu合规基线检查-等保二级</SubTypeAlias>
+    <LowWarningCount>0</LowWarningCount>
+    <RiskName>Linux Ubuntu合规基线检查-等保二级</RiskName>
+  </WarningSummarys>
+  <WarningSummarys>
+    <RiskId>56</RiskId>
+    <LastFoundTime>2019-02-19 12:57:23</LastFoundTime>
+    <MediumWarningCount>0</MediumWarningCount>
+    <WarningMachineCount>0</WarningMachineCount>
+    <CheckCount>15</CheckCount>
+    <HighWarningCount>0</HighWarningCount>
+    <Level>medium</Level>
+    <TypeAlias>系统</TypeAlias>
+    <SubTypeAlias>Linux Ubuntu合规基线检查-等保三级</SubTypeAlias>
+    <LowWarningCount>0</LowWarningCount>
+    <RiskName>Linux Ubuntu合规基线检查-等保三级</RiskName>
+  </WarningSummarys>
+  <WarningSummarys>
+    <RiskId>54</RiskId>
+    <LastFoundTime>2019-02-19 12:57:23</LastFoundTime>
+    <MediumWarningCount>0</MediumWarningCount>
+    <WarningMachineCount>0</WarningMachineCount>
+    <CheckCount>16</CheckCount>
+    <HighWarningCount>0</HighWarningCount>
+    <Level>high</Level>
+    <TypeAlias>系统</TypeAlias>
+    <SubTypeAlias>Linux Ubuntu 安全基线检查</SubTypeAlias>
+    <LowWarningCount>0</LowWarningCount>
+    <RiskName>Linux Ubuntu 安全基线检查</RiskName>
+  </WarningSummarys>
+  <WarningSummarys>
+    <RiskId>51</RiskId>
+    <LastFoundTime>2019-02-19 12:44:58</LastFoundTime>
+    <MediumWarningCount>0</MediumWarningCount>
+    <WarningMachineCount>0</WarningMachineCount>
+    <CheckCount>12</CheckCount>
+    <HighWarningCount>0</HighWarningCount>
+    <Level>high</Level>
+    <TypeAlias>系统</TypeAlias>
+    <SubTypeAlias>Windows 2012 R2安全基线检查</SubTypeAlias>
+    <LowWarningCount>0</LowWarningCount>
+    <RiskName>Windows 2012 R2安全基线检查</RiskName>
+  </WarningSummarys>
+</DescribeCheckWarningSummary>
+
+```
+
 `JSON` 格式
 
 ``` {#json_return_success_demo}
