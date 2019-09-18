@@ -10,7 +10,7 @@ You are billed for the validity period specified in your subscription.
 
 Bill= \(Number of billable assets \* Price of protecting one server for validity period + Price of value-added functions \* Number/Volumn of the value-added functions\) \* Validity period of subscription.
 
--   **Number of assets**: Refers to the number of billable assets that require Cloud Security Center's protection, including ECS instances and external servers. The default Number of assets is the number of ECS instances you own, and the number of assets that you specify cannot be less than the number of your ECS instances.
+-   **Number of assets**: Refers to the number of billable assets that require Security Center's protection, including ECS instances and external servers. The default Number of assets is the number of ECS instances you own, and the number of assets that you specify cannot be less than the number of your ECS instances.
 -   **Value-added functions**: The value-added functions provided by Security Center must be additionally purchased, such as Log Analysis service .
 -   **Price of protecting one server**: You could check the detailed price of protecting one server and the value-added functions on [Security Center purchase page](https://common-buy-intl.aliyun.com/?spm=a3c0i.intl-en-product-TDS.0.0.47de69c8zc2xog&commodityCode=sas_intl#/buy).
 
@@ -34,4 +34,10 @@ Value-added functions are available for **Advanced** and **Enterprise** editions
 |Log Analysis|72.9 USD/T/month|
 
 Details on how to purchase Security Center, refer to [Purchase Security Center](https://www.alibabacloud.com/help/doc-detail/42308.htm).
+
+## Related documents {#section_0cp_ado_rpp .section}
+
+[Purchase Security Center](../../../../reseller.en-US/Pricing/Purchase Security Center.md#)
+
+[Renewal and upgrade](../../../../reseller.en-US/Pricing/Renewal and upgrade.md#)
 
