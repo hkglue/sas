@@ -13,7 +13,7 @@
 3.  在Windows系统漏洞页面，查看和管理云安全中心检测到的所有Windows系统漏洞信息。 
     -   **查看漏洞信息**
 
-        ![查看漏洞信息](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/156739297439812_zh-CN.png)
+        ![查看漏洞信息](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/156885690939812_zh-CN.png)
 
     -   **查看漏洞的修复紧急度建议** 
 
@@ -22,7 +22,7 @@
         -   红色图标表示云安全中心判定该漏洞修复紧急程度**高**
         -   橙色图标表示云安全中心判定该漏洞修复紧急程度**中**
         -   灰色图标表示云安全中心判定该漏洞修复紧急程度**低**
-        ![查看漏洞的修复紧急度建议](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/156739297451603_zh-CN.png)
+        ![查看漏洞的修复紧急度建议](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/156885690951603_zh-CN.png)
 
         **说明：** 建议立即修复高危漏洞（紧急程度高）。
 
@@ -30,19 +30,19 @@
 
         您可在Windows系统漏洞页面，勾选漏洞列表左侧的复选框后单击**加入白名单**，将该漏洞加入白名单中。加入白名单后，云安全中心将不再对白名单中的漏洞进行告警。
 
-        ![将漏洞加入白名单](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/156739297451606_zh-CN.png)
+        ![将漏洞加入白名单](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/156885690951606_zh-CN.png)
 
         加入白名单的漏洞将从Windows系统漏洞的漏洞列表中移除，并记录在[漏洞管理设置](intl.zh-CN/安全防范/漏洞修复/漏洞管理设置与加白名单.md#)页面的**漏洞白名单配置**列表中。
 
         如需恢复云安全中心对白名单中的漏洞进行检测和告警提示，可在漏洞管理设置页面**移除**该漏洞。
 
-        ![漏洞白名单配置](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/156739297439827_zh-CN.png)
+        ![漏洞白名单配置](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/156885690939827_zh-CN.png)
 
     -   **搜索漏洞** 
 
         您可在Windows系统漏洞页面通过筛选漏洞危险等级（高、中、低）、漏洞处理状态（已处理、未处理）、资产分组或输入漏洞名称定位到相关的漏洞。
 
-        ![搜索漏洞](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/156739297452207_zh-CN.png)
+        ![搜索漏洞](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/156885691052207_zh-CN.png)
 
         **说明：** 搜索漏洞名称支持模糊查询。
 
@@ -52,7 +52,7 @@
 
         **说明：** 根据您资产中漏洞数据的大小，导出漏洞列表可能需要耗费一定时间，请耐心等待。
 
-        ![导出漏洞](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/156739297452208_zh-CN.png)
+        ![导出漏洞](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/156885691052208_zh-CN.png)
 
 
 ## 查看漏洞详情和处理漏洞 {#section_ubd_e64_h9c .section}
@@ -61,7 +61,7 @@
 2.  在左侧导航栏，单击**安全防范** \> **漏洞修复**，打开**漏洞修复**页面，单击**Windows系统漏洞**。
 3.  在漏洞列表，单击**漏洞公告**名称或**漏洞公告**对应**操作**栏下的**修复**，可展开对应的漏洞详情页面。 您可查看该漏洞的漏洞详情简介和待处理漏洞数量及待处理漏洞关联资产。
 
-    ![漏洞详情页](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/156739297457220_zh-CN.png)
+    ![漏洞详情页](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/156885691057220_zh-CN.png)
 
 4.  在漏洞详情页面，您可以根据需要执行以下步骤查看漏洞详情，并处理漏洞。 
     -   **查看漏洞详情** 
@@ -73,7 +73,7 @@
 
             您可在漏洞影响资产列表，查看该漏洞影响的所有资产、漏洞的状态等信息，并可对漏洞执行验证、修复、加入白名单、忽略或回滚的操作。
 
-        ![待处理漏洞](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/156739297457224_zh-CN.png)
+        ![待处理漏洞](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/156885691057224_zh-CN.png)
 
     -   **查看漏洞严重等级** 
 
@@ -97,7 +97,7 @@
 
         您可对受影响资产漏洞进行修复、验证、加白名单、忽略或回滚的操作。
 
-        ![处理漏洞](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/156739297557225_zh-CN.png)
+        ![处理漏洞](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/156885691057225_zh-CN.png)
 
         -   **修复漏洞** 
 
@@ -119,7 +119,7 @@
 
         -   **忽略漏洞** 
 
-            您可在漏洞详情页面，勾选漏洞列表左侧的复选框后，单击![忽略按钮](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15298/156739297551566_zh-CN.png)并选择**忽略**，云安全中心将不再提示该漏洞。
+            您可在漏洞详情页面，勾选漏洞列表左侧的复选框后，单击![忽略按钮](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15298/156885691051566_zh-CN.png)并选择**忽略**，云安全中心将不再提示该漏洞。
 
             **说明：** 被**忽略**的漏洞状态将转为**已忽略**。如需云安全中心继续对该漏洞进行告警提示，可在**已处理**的漏洞列表中找到该漏洞并对其**取消忽略**。
 
@@ -131,7 +131,7 @@
 
         您可在漏洞详情页面，通过筛选漏洞危险等级（高、中、低）、资产分组、漏洞处理状态（已处理、未处理）或输入服务器IP或名称定位到相关的漏洞影响资产。
 
-        ![搜索](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/156739297539817_zh-CN.png)
+        ![搜索](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/156885691039817_zh-CN.png)
 
         **说明：** 搜索服务器IP或名称支持模糊查询。
 
@@ -141,16 +141,12 @@
 
         **说明：** 根据您资产中漏洞数据的大小，导出漏洞列表可能需要耗费一定时间，请耐心等待。
 
-        ![导出](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/156739297552209_zh-CN.png)
+        ![导出](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/156885691152209_zh-CN.png)
 
     -   **保存已筛选漏洞** 
 
-        您可在漏洞详情页面，单击![保存筛选按钮](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/156739297539821_zh-CN.png)按钮保存筛选出的所有漏洞为一个漏洞修复批次，方便您对该批次漏洞的状态进行持续跟踪。
+        您可在漏洞详情页面，单击![保存筛选按钮](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/156885691139821_zh-CN.png)按钮保存筛选出的所有漏洞为一个漏洞修复批次，方便您对该批次漏洞的状态进行持续跟踪。
 
-        ![保存筛选](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/156739297539820_zh-CN.png)
+        ![保存筛选](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/118684/156885691139820_zh-CN.png)
 
-
-## 相关文档 {#section_qeo_kd8_1d2 .section}
-
-[Windows漏洞修复时出现0x80240017 104 （Patch Not Applicable）报错](../intl.zh-CN/常见问题/常见问题隐藏目录/漏洞相关问题/Windows漏洞修复时出现0x80240017 104 （Patch Not Applicable）报错.md#)
 
