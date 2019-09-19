@@ -33,7 +33,7 @@
 6.  填写**RAM角色名称**。
 7.  单击**确定**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13263/156873501839397_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13263/156887336439397_zh-CN.png)
 
 
 以上步骤中创建的RAM角色详情如下。
@@ -106,7 +106,7 @@
         }
         ```
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13263/156873501839398_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13263/156887336439398_zh-CN.png)
 
     资源（Resource）设置说明：
 
@@ -120,7 +120,7 @@
     2.  在**操作**栏单击**添加权限**。
     3.  选择指定自定义授权策略，并单击**确定**。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13263/156873501839399_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13263/156887336439399_zh-CN.png)
 
 
 ## 步骤3 云账号B创建RAM用户B1并授权 {#section_k2h_2t3_wgb .section}
@@ -132,7 +132,7 @@
 3.  单击**新建用户**。
 4.  设置RAM用户基本信息，勾选**控制台密码登录**和**编程访问**，并单击**确定**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13263/156873501939400_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13263/156887336439400_zh-CN.png)
 
 5.  通过手机验证码验证权限。
 6.  在**人员管理** \> **用户**找到该用户，并单击**添加权限**。
@@ -140,7 +140,7 @@
 
     `AliyunSTSAssumeRoleAccess`表示允许该用户调用 STS AssumeRole 接口。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13263/156873501939401_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13263/156887336439401_zh-CN.png)
 
 
 ## 步骤4 RAM账号B1获取STS临时凭证，访问日志服务API接口 {#section_vvk_gt3_wgb .section}

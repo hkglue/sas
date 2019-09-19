@@ -4,7 +4,7 @@
 
 The projects, Logstores, configurations, and machine groups you create are your own resources.  By default, you have the full operation permissions on your resources, and can use all APIs described in this document to perform operations on your resources.
 
-To grant another account the permissions to access your resources, you must use Security Token Service \(STS\) to obtain the temporary AccessKey/token to call specific operations. Before reading the following instructions, see the [Introduction](../../../../../intl.en-US/API Reference (STS)/Introduction.md).
+To grant another account the permissions to access your resources, you must use Security Token Service \(STS\) to obtain the temporary AccessKey/token to call specific operations. Before reading the following instructions, see the [What is STS?](../../../../intl.en-US/API Reference (STS)/What is STS?.md).
 
 Assume that User A creates a project, LogStore, and other resources in Log Service, and User B wants to call an API to access these resources, the operation steps are as follows.
 
@@ -93,11 +93,11 @@ Create a RAM user and grant the AssumeRole permission  to the created RAM user 
 
 **Call STS interface to obtain the temporary AccessKey/token**
 
-[For more information, see STS SDK usage Limits](../../../../../intl.en-US/SDK Reference/SDK Reference - RAM/Java SDK.md)
+[For more information, see STS SDK usage Limits](../../../../intl.en-US/SDK Reference/RAM SDK reference/Java SDK.md)
 
 **Call a Log Service interface**
 
-[Log Service SDK Instructions](../../../../../intl.en-US/SDK Reference/Basic Descriptions /Overview.md)
+[Log Service SDK Instructions](../../../../intl.en-US/SDK Reference/Basic Descriptions /Overview.md)
 
 ## Code example {#section_iq3_nk5_12b .section}
 
