@@ -10,7 +10,7 @@ Time: From 06:00 to 12:00 every day.
 
 Object: All assets under your Alibaba Cloud account.
 
-![](images/41077_en-US.png)
+![默认策略](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41642/156887646341077_en-US.png)
 
 You can also customize a baseline check policy that covers the baseline items that are not covered by the default policy.
 
@@ -21,7 +21,7 @@ You can also customize a baseline check policy that covers the baseline items th
 3.  In the upper-right corner, click **Manage Policies** to customize a policy or modify the default policy.
     -   In the upper-right corner of the Manage Policies page, click **Create Policy**.
 
-        ![](images/41084_en-US.png)
+        ![新增策略](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41642/156887646341084_en-US.png)
 
         |Configuration item|Description|
         |------------------|-----------|
@@ -42,6 +42,10 @@ You can also customize a baseline check policy that covers the baseline items th
 
         **Note:** You cannot delete the default policy or modify the check items in the default policy.
 
-        ![](images/41078_en-US.png)
+        ![编辑默认策略](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41642/156887646541078_en-US.png)
+
+    -   Below the Manage Policies page, you can set the level range \(high, medium, low\) for the baseline check.
+
+        ![基线检查等级](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41642/156887646558548_en-US.png)
 
 
