@@ -1,4 +1,4 @@
-# Baseline check {#concept_hmp_h5d_rfb .concept}
+# Baseline check {#concept_hmp_h5d_rfb .task}
 
 This topic describes how to check the baselines by using customized policies, and how to view the check results and suggestions on handling baseline risks.
 
