@@ -8,7 +8,7 @@ Baseline check is a value-added service of Security Center. Only **Enterprise Ed
 
 In the upper part of the Baseline Risk page, you can view the summary data for the baseline check result.
 
-![检查结果统计](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41682/156887778821603_en-US.png)
+![检查结果统计](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41682/156887816421603_en-US.png)
 
 -   Checked Servers: The number of servers on which baseline check is performed.
 
@@ -19,7 +19,7 @@ In the upper part of the Baseline Risk page, you can view the summary data for t
 
     If the number in the **Last Check Pass Rate** area is green, the pass rate of the checked servers is high. If this number is red, a large number of baseline risks have been detected. We recommend that you view the check result details and deal with the **failed** items.
 
-    ![检查详情](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41682/156887778841096_en-US.png)
+    ![检查详情](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41682/156887816441096_en-US.png)
 
 
 ## Manually perform a baseline check {#section_pq1_3ql_dhb .section}
@@ -30,19 +30,19 @@ Both automatic periodical check and manual check are supported. To schedule a pe
 2.  In the left-side navigation pane, click **Baseline Check**.
 3.  In the **Select Policy** drop-down list, select a policy for a manual check.
 
-    ![选择策略](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41682/156887778941095_en-US.png)
+    ![选择策略](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41682/156887816441095_en-US.png)
 
     **Note:** If any number in the **Failed Items/Affected Servers** column is not 0, baseline risks have been detected on your servers.
 
-4.  Click **Check Now**.![](images/41092_en-US.png) 
+4.  Click **Check Now**.
 
     After you click **Check Now**, the progress of the check is displayed.
 
-    ![检测进度](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41682/156887778941093_en-US.png)
+    ![检测进度](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41682/156887816441093_en-US.png)
 
     You can click **View Progress** to view the number of servers that have passed or failed the check and the causes of the failures. Click **View Solution** to learn how to handle the failures.
 
-    ![检测详情](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41682/156887778941094_en-US.png)
+    ![检测详情](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41682/156887816441094_en-US.png)
 
     Click **Refresh** to view the latest check result.
 
@@ -55,12 +55,12 @@ After a baseline check is complete, you can click a **baseline** in the list to 
 2.  In the left-side navigation pane, click **Baseline Check**.
 3.  In the baseline list, click a **baseline**.
 
-    ![基线项](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41682/156887778941097_en-US.png)
+    ![基线项](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41682/156887816541097_en-US.png)
 
 4.  On the details page of the selected baseline, you can:
     -   View the information about all assets affected by this baseline.
 
-        ![影响资产](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41682/156887778941098_en-US.png)
+        ![影响资产](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41682/156887816541098_en-US.png)
 
     -   Click **View** next to an asset to view the at-risk baseline items on this asset and the check result of each item. The check result can be **failed** or **passed**.
 
@@ -68,7 +68,7 @@ After a baseline check is complete, you can click a **baseline** in the list to 
 
     -   If you do not want to receive alerts for risks on an item, select this item and click **Ignore** to remove it from the alert list. An ignored item no longer triggers alerts.
 
-        ![忽略](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41682/156887778941100_en-US.png)
+        ![忽略](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41682/156887816541100_en-US.png)
 
         **Note:** To ignore multiple items, select the items, and click **Ignore** below the item list of the asset.
 
@@ -76,13 +76,13 @@ After a baseline check is complete, you can click a **baseline** in the list to 
 
         We recommend that you enhance the baseline configurations based on the **suggestions**.
 
-        ![详情](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41682/156887779041101_en-US.png)
+        ![详情](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41682/156887816541101_en-US.png)
 
         **Note:** We recommend that you handle the failed items of high severity immediately.
 
     -   After you handle a failed item, click **Verify** to check whether the risk has been cleared. After you begin verifying an item, the item status becomes **Verifying**.
 
-        ![验证中](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41682/156887779041102_en-US.png)
+        ![验证中](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41682/156887816541102_en-US.png)
 
         If you have not verified an item, Security Center automatically verifies this item during the next periodical check.
 
