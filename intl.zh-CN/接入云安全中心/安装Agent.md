@@ -1,4 +1,4 @@
-# 安装Agent {#concept_dl4_ykc_zdb .concept}
+# 安装Agent {#concept_dl4_ykc_zdb .task}
 
 云安全中心Agent是云安全中心提供的本地插件，您必须在服务器操作系统上安装云安全中心Agent插件才能使用云安全中心提供的安全防护服务。
 
@@ -6,22 +6,22 @@
 
 ## 如何查看哪些资产需要安装Agent插件？ {#section_wzt_66o_xsp .section}
 
-每台资产都需安装Agent插件，您可以在云安全中心控制台**总览**页面资产保护模块，查看未安装Agent插件（即**未保护资产**）的服务器数量。单击**安装Agent**跳转到**设置** \> **安装/卸载插件**页面。
+每台资产都需安装Agent插件，您可以在云安全中心控制台**总览**页面资产保护模块，查看未安装Agent插件（即**未防护服务器**）的服务器数量。单击**安装Agent**跳转到**设置** \> **安装/卸载插件**页面。
 
-![1](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13631/156413363248934_zh-CN.png)
+![安装Agent](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13631/156885936948934_zh-CN.png)
 
-**说明：** 您也可以在**资产管理**页面确认服务器Agent安装状态。
+**说明：** 您也可以在**资产中心**页面确认服务器Agent安装状态。
 
 -   保护状态为**开启**：表示Agent已安装且处于正常运行状态。
 -   保护状态为**关闭**：表示Agent未安装或处于离线状态。
 
 **安装/卸载插件**页面会展示出您所有**未安装Agent插件**（包含已关机的服务器）的服务器列表。您可在该页面对未安装Agent的服务器执行一键自动安装或手动下载、执行命令安装。一键安装功能无需您单独下载插件。
 
-![2](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13631/156413363353451_zh-CN.png)
+![安装](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13631/156885937053451_zh-CN.png)
 
 该页面下方还会展示出对于不支持一键安装功能的服务器，您需手动安装Agent插件的操作指引。
 
-![3](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13631/156413363353460_zh-CN.png)
+![手动安装](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13631/156885937053460_zh-CN.png)
 
 ## 注意事项 {#section_ort_h99_hi3 .section}
 
@@ -57,10 +57,10 @@
 2.  单击**安全运营** \> **设置** \> **安装/卸载插件**。
 3.  单击**操作**栏的**安装客户端**，勾选单个服务器安装Agent，或单击左下角**一键安装**对多台服务器执行批量安装Agent。
 
-    ![2](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13631/156413363353451_zh-CN.png)
+    ![安装](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13631/156885937053451_zh-CN.png)
 
 
-Agent插件安装完成约五分钟后，您即可在**资产管理**中查看您服务器的在线情况：阿里云服务器将会从**关闭**变成**开启**。
+Agent插件安装完成约五分钟后，您即可在**资产中心**中查看您服务器的在线情况：阿里云服务器将会从**关闭**变成**开启**。
 
 **说明：** 一键安装后如果客户端状态显示为**安装失败**并提示**未安装云助手**，请先安装云助手。云助手安装相关内容参见文档[云助手](../../../../intl.zh-CN/运维与监控/云助手/云助手概述.md#)。
 
@@ -88,16 +88,16 @@ Agent插件安装完成约五分钟后，您即可在**资产管理**中查看�
 2.  单击**安全运营** \> **设置** \> **安装/卸载插件**。
 3.  根据您的服务器操作系统选择安装步骤，获取最新版本Agent插件。
 
-    ![3](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13631/156413363353460_zh-CN.png)
+    ![手动安装](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13631/156885937053460_zh-CN.png)
 
-    -   **Windows 系统**
+    -   **Windows系统**
 
         1.  在安装Agent页面，单击**点击下载**下载最新版本Agent安装文件到本地计算机。
         2.  将安装文件上传至您的Windows服务器，例如通过FTP工具将安装文件上传到服务器。
         3.  在您的Windows服务器上以管理员权限运行Agent插件安装程序。
         4.  非阿里云服务器输入安装验证Key关联您的阿里云账号。您可在Agent安装页面找到您的安装验证Key。
 
-            ![4](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13631/156413363448994_zh-CN.png)
+            ![Windows系统](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13631/156885937148994_zh-CN.png)
 
             **说明：** 每个安装验证KEY有效期为1小时，超过该时间将无法正确安装Agent插件。安装插件前请及时刷新安装验证KEY。
 
@@ -159,8 +159,4 @@ Agent插件安装完成约五分钟后，您即可在云安全中心管理控制
 |美国（弗吉尼亚）|
 |中东与印度|印度（孟买）|
 |阿联酋（迪拜）|
-
-## 相关文档 {#section_iph_k3p_57w .section}
-
-[安装、卸载相关问题](../../../../intl.zh-CN/常见问题/云安全中心常见问题概览.md#section_ymh_u9c_vbp)
 
